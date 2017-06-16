@@ -1,0 +1,1 @@
+nrfutil pkg generate --hw-version 52 --application-version 0x000000 --application NRF52.hex --sd-req 0x98 --key-file pecpec.key pecpec_app_dfu_package.zip

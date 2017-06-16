@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBitz_project_file>
+	<EmBitzVersion release="1.11" revision="0" />
+	<FileVersion major="1" minor="0" />
+	<Project>
+		<Option title="NRF52" />
+		<Option pch_mode="2" />
+		<Option compiler="armgcc_eb" />
+		<MakeCommands>
+			<Build command="$make -f $makefile $target" />
+			<CompileFile command="$make -f $makefile $file" />
+			<Clean command="$make -f $makefile clean$target" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="$make -q -f $makefile $target" />
+			<SilentBuild command="$make -s -f $makefile default" />
+		</MakeCommands>
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\NRF52.elf" />
+				<Option object_output="obj\Debug\" />
+				<Option type="0" />
+				<Option create_hex="1" />
+				<Option compiler="armgcc_eb" />
+				<Option projectDeviceOptionsRelation="0" />
+				<Option projectAssemblerOptionsRelation="1" />
+				<Option projectLibDirsRelation="1" />
+				<Device>
+					<Add option="$device=cortex-m0" />
+					<Add option="$lscript=./gcc_nrf51_blank_xxaa.ld" />
+					<Add option="$stack=0x400" />
+					<Add option="$heap=0x200" />
+				</Device>
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+					<Add option="-O0" />
+					<Add option="-g3" />
+					<Add symbol="NRF52832" />
+					<Add symbol="DEBUG" />
+					<Add symbol="DEBUG_NRF" />
+				</Compiler>
+				<Assembler>
+					<Add option="-Wa,--gdwarf-2" />
+				</Assembler>
+				<Linker>
+					<Add option="-Wl,--cref" />
+					<Add option="-Wl,--gc-sections" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$make -f $makefile $target" />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean$target" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -s -f $makefile default" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\NRF52.elf" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option create_hex="1" />
+				<Option compiler="armgcc_eb" />
+				<Option projectDeviceOptionsRelation="0" />
+				<Device>
+					<Add option="$device=cortex-m0" />
+					<Add option="$stack=0x400" />
+					<Add option="$heap=0x200" />
+					<Add option="$lscript=./gcc_nrf51_blank_xxaa.ld" />
+				</Device>
+				<Compiler>
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+					<Add option="-Ofast" />
+					<Add option="-g2" />
+					<Add option="-fno-strict-aliasing" />
+				</Compiler>
+				<Assembler>
+					<Add option="-Wa,--no-warn" />
+				</Assembler>
+				<Linker>
+					<Add option="-Wl,--gc-sections" />
+				</Linker>
+			</Target>
+		</Build>
+		<Device>
+			<Add option="$device=cortex-m4" />
+			<Add option="$lscript=.\gcc_nrf52.ld" />
+			<Add option="$stack=0x2048" />
+			<Add option="$heap=0x1024" />
+		</Device>
+		<Compiler>
+			<Add option="-mfloat-abi=hard" />
+			<Add option="-fdata-sections" />
+			<Add option="-ffunction-sections" />
+			<Add option="-mcpu=cortex-m4" />
+			<Add option="-mthumb -mabi=aapcs" />
+			<Add option="-Wall -Werror" />
+			<Add option="-mfpu=fpv4-sp-d16" />
+			<Add option="-fno-strict-aliasing" />
+			<Add option="-fno-builtin --short-enums" />
+			<Add symbol="NRF52832_XXAA" />
+			<Add symbol="__STARTUP_CONFIG" />
+			<Add symbol="NRF52" />
+			<Add symbol="NRF52_PAN_64" />
+			<Add symbol="SOFTDEVICE_PRESENT" />
+			<Add symbol="USE_APP_CONFIG" />
+			<Add symbol="BOARD_PCA10040" />
+			<Add symbol="NRF52_PAN_12" />
+			<Add symbol="NRF52_PAN_58" />
+			<Add symbol="NRF52_PAN_54" />
+			<Add symbol="NRF52_PAN_31" />
+			<Add symbol="NRF52_PAN_51" />
+			<Add symbol="NRF52_PAN_36" />
+			<Add symbol="CONFIG_GPIO_AS_PINRESET" />
+			<Add symbol="BLE_STACK_SUPPORT_REQD" />
+			<Add symbol="NRF52_PAN_15" />
+			<Add symbol="NRF_SD_BLE_API_VERSION=4" />
+			<Add symbol="SWI_DISABLE0" />
+			<Add symbol="NRF52_PAN_20" />
+			<Add symbol="NRF52_PAN_55" />
+			<Add symbol="NRF52_PAN_74" />
+			<Add symbol="S132" />
+			<Add directory="$(TARGET_COMPILER_DIR)\..\lib\nordic" />
+			<Add directory="$(SDK_ROOT_13)\components" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_advertising" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_dtm" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_racp" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_ancs_c" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_ans_c" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_bas" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_bas_c" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_cscs" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_cts_c" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_dfu" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_dis" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_gls" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_hids" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_hrs" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_hrs_c" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_hts" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_ias" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_ias_c" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_lbs" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_lbs_c" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_lls" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_nus" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_nus_c" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_rscs" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_rscs_c" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\ble_services\ble_tps" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\common" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\nrf_ble_gatt" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\nrf_ble_qwr" />
+			<Add directory="$(SDK_ROOT_13)\components\ble\peer_manager" />
+			<Add directory="$(SDK_ROOT_13)\components\boards" />
+			<Add directory="$(SDK_ROOT_13)\components\device\" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\clock" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\common" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\comp" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\delay" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\gpiote" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\hal" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\i2s" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\lpcomp" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\pdm" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\power" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\ppi" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\pwm" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\qdec" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\rng" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\rtc" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\saadc" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\systick" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\spi_master" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\spi_slave" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\swi" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\timer" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\twi_master" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\twis_slave" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\uart" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\usbd" />
+			<Add directory="$(SDK_ROOT_13)\components\drivers_nrf\wdt" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\bsp" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\button" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\crc16" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\crc32" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\csense" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\csense_drv" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\ecc" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\experimental_section_vars" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\fds" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\fifo" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\fstorage" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\gpiote" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\hardfault" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\hci" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\led_softblink" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\log" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\log\src" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\low_power_pwm" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\mem_manager" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\pwm" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\queue" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\scheduler" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\slip" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\strerror" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\timer" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\twi" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\uart" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\usbd" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\usbd\class\audio" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\usbd\class\cdc" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\usbd\class\cdc\acm" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\usbd\class\hid" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\usbd\class\hid\generic" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\usbd\class\hid\kbd" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\usbd\class\hid\mouse" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\usbd\class\msc" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\usbd\config" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\util" />
+			<Add directory="$(SDK_ROOT_13)\components\serialization\common" />
+			<Add directory="$(SDK_ROOT_13)\components\serialization\common\connectivity\codecs\ble\middleware" />
+			<Add directory="$(SDK_ROOT_13)\components\serialization\common\transport" />
+			<Add directory="$(SDK_ROOT_13)\components\serialization\common\transport\ser_phy" />
+			<Add directory="$(SDK_ROOT_13)\components\serialization\common\transport\ser_phy\config" />
+			<Add directory="$(SDK_ROOT_13)\components\serialization\connectivity" />
+			<Add directory="$(SDK_ROOT_13)\components\serialization\connectivity\codecs\ble\middleware" />
+			<Add directory="$(SDK_ROOT_13)\components\serialization\connectivity\hal" />
+			<Add directory="$(SDK_ROOT_13)\components\softdevice\common\softdevice_handler" />
+			<Add directory="$(SDK_ROOT_13)\components\softdevice\s132\headers" />
+			<Add directory="$(SDK_ROOT_13)\components\softdevice\s132\headers\nrf52" />
+			<Add directory="$(SDK_ROOT_13)\components\toolchain" />
+			<Add directory="$(SDK_ROOT_13)\components\toolchain\cmsis\include" />
+			<Add directory="$(SDK_ROOT_13)\components\toolchain\gcc" />
+			<Add directory="$(SDK_ROOT_13)\external\segger_rtt" />
+		</Compiler>
+		<Assembler>
+			<Add option="--defsym,SER_CONNECTIVITY" />
+			<Add option="--defsym,NRF52" />
+			<Add option="--defsym,NRF52_PAN_64" />
+			<Add option="--defsym,SOFTDEVICE_PRESENT" />
+			<Add option="--defsym,BOARD_PCA10040" />
+			<Add option="--defsym,NRF52832" />
+			<Add option="--defsym,NRF52_PAN_12" />
+			<Add option="--defsym,NRF52_PAN_58" />
+			<Add option="--defsym,NRF52_PAN_54" />
+			<Add option="--defsym,NRF52_PAN_31" />
+			<Add option="--defsym,NRF52_PAN_51" />
+			<Add option="--defsym,NRF52_PAN_36" />
+			<Add option="--defsym,CONFIG_GPIO_AS_PINRESET" />
+			<Add option="--defsym,BLE_STACK_SUPPORT_REQD" />
+			<Add option="--defsym,NRF52_PAN_15" />
+			<Add option="--defsym,NRF_SD_BLE_API_VERSION=3" />
+			<Add option="--defsym,BSP_DEFINES_ONLY" />
+			<Add option="--defsym,SWI_DISABLE0" />
+			<Add option="--defsym,NRF52_PAN_20" />
+			<Add option="--defsym,NRF52_PAN_55" />
+			<Add option="--defsym,S132" />
+			<Add option="-x assembler-with-cpp" />
+		</Assembler>
+		<Linker>
+			<Add option="-Wl,--gc-sections" />
+			<Add option="-mcpu=cortex-m4" />
+			<Add option="-mthumb" />
+			<Add option="-mabi=aapcs" />
+			<Add option="-L $(TEMPLATE_PATH)" />
+			<Add option="-T$(LINKER_SCRIPT)" />
+			<Add option="-mfloat-abi=hard" />
+			<Add option="-mfpu=fpv4-sp-d16" />
+			<Add option="--specs=nano.specs -lc -lnosys" />
+		</Linker>
+		<Unit filename="gcc_nrf52.ld" />
+		<Unit filename="Inc\app_config.h" />
+		<Unit filename="Inc\pecpec_ble.h" />
+		<Unit filename="Inc\pecpec_nrf52.h" />
+		<Unit filename="Inc\sdk_config.h" />
+		<Unit filename="Inc\startup_config.h" />
+		<Unit filename="readme.txt" />
+		<Unit filename="Src\main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Src\pecpec_ble.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Src\pecpec_nrf52.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_advertising\ble_advertising.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_services\ble_nus\ble_nus.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_advdata.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_conn_params.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_srv_common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\nrf_ble_gatt\nrf_ble_gatt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\clock\nrf_drv_clock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\common\nrf_drv_common.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\gpiote\nrf_drv_gpiote.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\systick\nrf_drv_systick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\twi_master\nrf_drv_twi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\uart\nrf_drv_uart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\fifo\app_fifo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\fstorage\fstorage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\gpiote\app_gpiote.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\hardfault\hardfault_implementation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\hardfault\nrf52\handler\hardfault_handler_gcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\log\src\nrf_log_backend_serial.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\log\src\nrf_log_frontend.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\scheduler\app_scheduler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\strerror\nrf_strerror.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\timer\app_timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\uart\app_uart_fifo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\uart\retarget.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\app_error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\app_error_weak.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\app_util_platform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\nrf_assert.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\softdevice\common\softdevice_handler\softdevice_handler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\toolchain\gcc\gcc_startup_nrf52.S">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\toolchain\system_nrf52.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\RTT_Syscalls_GCC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\SEGGER_RTT.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\SEGGER_RTT_printf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\open\MMA8453.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\open\MMA8453.h" />
+		<Unit filename="..\Source\open\MMA8453_port_NRF52.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\open\printf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\Source\open\printf.h" />
+		<Extensions>
+			<code_completion />
+			<debugger>
+				<target_debugging_settings target="Debug" active_interface="J-link">
+					<debug_interface interface_id="J-link" ip_address="localhost" ip_port="2331" path="%Software\SEGGER\J-Link:InstallPath%" executable="JLinkGDBServer.exe" description="..\Source\nrf\sdk\nRF5_SDK_13.0.0\svd\nrf52.svd" dont_start_server="false" backoff_time="2000" options="2" reg_filter="0" active_family="Nordic" gdb_before_conn="" gdb_after_conn="">
+						<family_options family_id="Nordic">
+							<option opt_id="ID_DEVICE" opt_value="nRF52832_xxAA" />
+							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
+							<option opt_id="ID_SPEED" opt_value="1000" />
+							<option opt_id="ID_AUTO_SPEED" opt_value="1" />
+							<option opt_id="ID_RESET_TYPE" opt_value="0" />
+							<option opt_id="ID_VECTOR_START" opt_value="0x00000000" />
+							<option opt_id="ID_LOAD_PROGRAM" opt_value="1" />
+							<option opt_id="ID_FLASH_DOWNLOAD" opt_value="1" />
+							<option opt_id="ID_FLASH_BREAK" opt_value="1" />
+							<option opt_id="ID_RAM_EXEC" opt_value="0" />
+							<option opt_id="ID_NCACHE_CHECK" opt_value="0" />
+							<option opt_id="ID_NCACHE_BASE" opt_value="" />
+							<option opt_id="ID_NCACHE_LENGTH" opt_value="" />
+							<option opt_id="ID_SEMIHOST_CHECK" opt_value="0" />
+							<option opt_id="ID_ARM_SWI" opt_value="" />
+							<option opt_id="ID_THUMB_SWI" opt_value="" />
+						</family_options>
+					</debug_interface>
+				</target_debugging_settings>
+				<target_debugging_settings target="Release" active_interface="J-link">
+					<debug_interface interface_id="J-link" ip_address="localhost" ip_port="2331" path="%Software\SEGGER\J-Link:InstallPath%" executable="JLinkGDBServer.exe" description="..\Source\nrf\sdk\svd\nrf52.svd" dont_start_server="false" backoff_time="2000" options="2" reg_filter="0" active_family="Nordic" gdb_before_conn="" gdb_after_conn="">
+						<family_options family_id="Nordic">
+							<option opt_id="ID_DEVICE" opt_value="nRF51822_xxAA" />
+							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
+							<option opt_id="ID_SPEED" opt_value="1000" />
+							<option opt_id="ID_AUTO_SPEED" opt_value="1" />
+							<option opt_id="ID_RESET_TYPE" opt_value="0" />
+							<option opt_id="ID_VECTOR_START" opt_value="0x00000000" />
+							<option opt_id="ID_LOAD_PROGRAM" opt_value="1" />
+							<option opt_id="ID_FLASH_DOWNLOAD" opt_value="1" />
+							<option opt_id="ID_FLASH_BREAK" opt_value="1" />
+							<option opt_id="ID_RAM_EXEC" opt_value="0" />
+							<option opt_id="ID_NCACHE_CHECK" opt_value="0" />
+							<option opt_id="ID_NCACHE_BASE" opt_value="" />
+							<option opt_id="ID_NCACHE_LENGTH" opt_value="" />
+							<option opt_id="ID_SEMIHOST_CHECK" opt_value="0" />
+							<option opt_id="ID_ARM_SWI" opt_value="" />
+							<option opt_id="ID_THUMB_SWI" opt_value="" />
+						</family_options>
+					</debug_interface>
+				</target_debugging_settings>
+			</debugger>
+			<envvars />
+		</Extensions>
+	</Project>
+</EmBitz_project_file>

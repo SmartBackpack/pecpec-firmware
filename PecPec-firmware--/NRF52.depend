@@ -1,0 +1,4331 @@
+# depslib dependency file v1.0
+1497427561 source:d:\ejs shmc\tech\projects\nrf52\src\main.c
+	<stdbool.h>
+	<stdint.h>
+	<stdio.h>
+	"nordic_common.h"
+	"nrf_sdm.h"
+	"nrf_soc.h"
+	"nrf_drv_systick.h"
+	"app_error.h"
+	"nrf.h"
+	"app_timer.h"
+	"app_gpiote.h"
+	"ble_nus.h"
+	"printf.h"
+	"SEGGER_RTT.h"
+	"MMA8453.h"
+	"app_scheduler.h"
+	"ser_hal_transport.h"
+	"ser_conn_handlers.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+	"pecpec_nrf52.h"
+	"pecpec_ble.h"
+	<string.h>
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\delay\nrf_delay.h
+	"nrf.h"
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf.h
+	"nrf51.h"
+	"nrf51_bitfields.h"
+	"nrf51_deprecated.h"
+	"nrf52840.h"
+	"nrf52840_bitfields.h"
+	"nrf51_to_nrf52840.h"
+	"nrf52_to_nrf52840.h"
+	"nrf52.h"
+	"nrf52_bitfields.h"
+	"nrf51_to_nrf52.h"
+	"nrf52_name_change.h"
+	"compiler_abstraction.h"
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf51.h
+	"core_cm0.h"
+	"system_nrf51.h"
+
+1480364704 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\toolchain\cmsis\include\core_cm0.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+
+1480364704 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\toolchain\cmsis\include\core_cminstr.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1480364704 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\toolchain\cmsis\include\cmsis_armcc.h
+
+1480364704 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\toolchain\cmsis\include\cmsis_armcc_v6.h
+
+1480364704 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\toolchain\cmsis\include\cmsis_gcc.h
+
+1480364704 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\toolchain\cmsis\include\core_cmfunc.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\toolchain\system_nrf51.h
+	<stdint.h>
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf51_bitfields.h
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf51_deprecated.h
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf52840.h
+	"core_cm4.h"
+	"system_nrf52840.h"
+
+1480364704 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\toolchain\cmsis\include\core_cm4.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+	"core_cmSimd.h"
+
+1480364704 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\toolchain\cmsis\include\core_cmsimd.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\toolchain\system_nrf52840.h
+	<stdint.h>
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf52840_bitfields.h
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf51_to_nrf52840.h
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf52_to_nrf52840.h
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf52.h
+	"core_cm4.h"
+	"system_nrf52.h"
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\toolchain\system_nrf52.h
+	<stdint.h>
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf52_bitfields.h
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf51_to_nrf52.h
+
+1480368324 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf52_name_change.h
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\compiler_abstraction.h
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\boards.h
+	"nrf_gpio.h"
+	"nrf6310.h"
+	"pca10000.h"
+	"pca10001.h"
+	"pca10000.h"
+	"pca10003.h"
+	"pca20006.h"
+	"pca10028.h"
+	"pca10031.h"
+	"pca10036.h"
+	"pca10040.h"
+	"pca10056.h"
+	"wt51822.h"
+	"n5_starterkit.h"
+	"d52_starterkit.h"
+	"arduino_primo.h"
+	"custom_board.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\hal\nrf_gpio.h
+	"nrf.h"
+	"nrf_peripherals.h"
+	"nrf_assert.h"
+	<stdbool.h>
+	<stdlib.h>
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\hal\nrf_peripherals.h
+	"nrf51422_peripherals.h"
+	"nrf51802_peripherals.h"
+	"nrf51822_peripherals.h"
+	"nrf52832_peripherals.h"
+	"nrf52840_peripherals.h"
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf51422_peripherals.h
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf51802_peripherals.h
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf51822_peripherals.h
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf52832_peripherals.h
+
+1480368323 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\device\nrf52840_peripherals.h
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\nrf_assert.h
+	<stdint.h>
+	"nrf.h"
+	"app_error.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\app_error.h
+	<stdint.h>
+	<stdio.h>
+	<stdbool.h>
+	"nrf.h"
+	"sdk_errors.h"
+	"nordic_common.h"
+	"app_error_weak.h"
+	"ant_error.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\sdk_errors.h
+	<stdint.h>
+	"nrf_error.h"
+	"sdk_config.h"
+
+1480364702 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\nrf_soc_nosd\nrf_error.h
+
+1497269475 d:\ejs shmc\tech\projects\nrf52\inc\sdk_config.h
+	"app_config.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\nordic_common.h
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\app_error_weak.h
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\nrf6310.h
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\pca10000.h
+	"nrf_gpio.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\pca10001.h
+	"nrf_gpio.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\pca10003.h
+	"nrf_gpio.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\pca20006.h
+	"nrf_gpio.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\pca10028.h
+	"nrf_gpio.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\pca10031.h
+	"nrf_gpio.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\pca10036.h
+	"nrf_gpio.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\pca10040.h
+	"nrf_gpio.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\pca10056.h
+	"nrf_gpio.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\wt51822.h
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\n5_starterkit.h
+	"nrf_gpio.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\d52_starterkit.h
+	"nrf_gpio.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\arduino_primo.h
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_channel_config\ant_channel_config.c
+	"sdk_common.h"
+	"nrf_error.h"
+	"ant_channel_config.h"
+	"ant_interface.h"
+	"ant_parameters.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\sdk_common.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	"sdk_config.h"
+	"nordic_common.h"
+	"compiler_abstraction.h"
+	"sdk_os.h"
+	"sdk_errors.h"
+	"app_util.h"
+	"sdk_macros.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\sdk_os.h
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\app_util.h
+	<stdint.h>
+	<stdbool.h>
+	"compiler_abstraction.h"
+	"nrf.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\sdk_macros.h
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_channel_config\ant_channel_config.h
+	<stdint.h>
+	"sdk_config.h"
+	"ant_encrypt_config.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_encryption\ant_encrypt_config.h
+	<stdint.h>
+	"sdk_errors.h"
+	"ant_stack_handler_types.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h
+	<stdlib.h>
+	<stdint.h>
+
+1478685346 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_parameters\ant_parameters.h
+	<stdint.h>
+	<stdbool.h>
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_encryption\ant_encrypt_config.c
+	"sdk_common.h"
+	<stdlib.h>
+	"ant_encrypt_config.h"
+	"ant_interface.h"
+	"ant_parameters.h"
+	"ant_encrypt_negotiation_slave.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_encryption\ant_encrypt_negotiation_slave.h
+	<stdint.h>
+	"ant_stack_handler_types.h"
+	"ant_encrypt_config.h"
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_encryption\ant_encrypt_negotiation_slave.c
+	"sdk_common.h"
+	<stdlib.h>
+	<string.h>
+	"ant_encrypt_config.h"
+	"ant_interface.h"
+	"ant_parameters.h"
+	"nrf_error.h"
+	"app_error.h"
+	"ant_encrypt_negotiation_slave.h"
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_fs\antfs.c
+	"sdk_common.h"
+	"antfs.h"
+	<string.h>
+	"defines.h"
+	"app_error.h"
+	"app_timer.h"
+	"ant_error.h"
+	"ant_parameters.h"
+	"ant_interface.h"
+	"ant_key_manager.h"
+	"crc.h"
+	"bsp.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_fs\antfs.h
+	<stdint.h>
+	<stdbool.h>
+	"defines.h"
+	"sdk_config.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_fs\defines.h
+	<stdint.h>
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\timer\app_timer.h
+	"sdk_config.h"
+	"app_error.h"
+	"app_util.h"
+	"compiler_abstraction.h"
+	<stdint.h>
+	<stdbool.h>
+	<stdio.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_key_manager\ant_key_manager.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_fs\crc.h
+	<stdint.h>
+
+1490650371 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\bsp\bsp.h
+	<stdint.h>
+	<stdbool.h>
+	"boards.h"
+	"app_button.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\button\app_button.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"app_error.h"
+	"nrf_gpio.h"
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_fs\crc.c
+	"crc.h"
+	"compiler_abstraction.h"
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_key_manager\ant_key_manager.c
+	"sdk_common.h"
+	<stdio.h>
+	"ant_key_manager.h"
+	"ant_key_manager_config.h"
+	"ant_interface.h"
+	"nrf_assert.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_key_manager\config\ant_key_manager_config.h
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\ant_bpwr.c
+	"sdk_common.h"
+	"nrf_assert.h"
+	"app_error.h"
+	"ant_interface.h"
+	"ant_bpwr.h"
+	"nrf_log.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\ant_bpwr.h
+	<stdint.h>
+	<stdbool.h>
+	"ant_parameters.h"
+	"ant_stack_handler_types.h"
+	"ant_channel_config.h"
+	"ant_bpwr_pages.h"
+	"sdk_errors.h"
+	"ant_bpwr_local.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\pages\ant_bpwr_pages.h
+	"ant_bpwr_page_1.h"
+	"ant_bpwr_page_16.h"
+	"ant_bpwr_page_17.h"
+	"ant_bpwr_page_18.h"
+	"ant_bpwr_common_data.h"
+	"ant_common_page_80.h"
+	"ant_common_page_81.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\pages\ant_bpwr_page_1.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\pages\ant_bpwr_page_16.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\pages\ant_bpwr_page_17.h
+	<stdint.h>
+	"ant_bpwr_page_torque.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\pages\ant_bpwr_page_torque.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\pages\ant_bpwr_page_18.h
+	<stdint.h>
+	"ant_bpwr_page_torque.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\pages\ant_bpwr_common_data.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_common\pages\ant_common_page_80.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_common\pages\ant_common_page_81.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\ant_bpwr_local.h
+	<stdint.h>
+	<stdbool.h>
+	"ant_bpwr.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\log\nrf_log.h
+	"sdk_config.h"
+	"nrf_log_internal.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\log\src\nrf_log_internal.h
+	"sdk_common.h"
+	"nrf.h"
+	"nrf_error.h"
+	"app_util.h"
+	<stdint.h>
+	<stdbool.h>
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\pages\ant_bpwr_common_data.c
+	"sdk_common.h"
+	"ant_bpwr_common_data.h"
+	"ant_bpwr_utils.h"
+	"nrf_log.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\utils\ant_bpwr_utils.h
+	"app_util.h"
+	"nrf_assert.h"
+	"nrf.h"
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\pages\ant_bpwr_page_1.c
+	"sdk_common.h"
+	<string.h>
+	"ant_bpwr_page_1.h"
+	"nrf_log.h"
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\pages\ant_bpwr_page_16.c
+	"sdk_common.h"
+	"ant_bpwr_page_16.h"
+	"nrf_log.h"
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\pages\ant_bpwr_page_17.c
+	"sdk_common.h"
+	"ant_bpwr_page_17.h"
+	"nrf_log.h"
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\pages\ant_bpwr_page_18.c
+	"sdk_common.h"
+	"ant_bpwr_page_18.h"
+	"nrf_log.h"
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bpwr\pages\ant_bpwr_page_torque.c
+	"sdk_common.h"
+	<stdio.h>
+	"ant_bpwr_page_torque.h"
+	"ant_bpwr_utils.h"
+	"nrf_log.h"
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\ant_bsc.c
+	"sdk_common.h"
+	"nrf_assert.h"
+	"nrf_error.h"
+	"app_error.h"
+	"ant_interface.h"
+	"ant_bsc.h"
+	"ant_bsc_utils.h"
+	"nrf_log.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\ant_bsc.h
+	<stdint.h>
+	<stdbool.h>
+	"sdk_errors.h"
+	"ant_parameters.h"
+	"ant_stack_handler_types.h"
+	"ant_channel_config.h"
+	"ant_bsc_pages.h"
+	"ant_bsc_local.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\pages\ant_bsc_pages.h
+	"ant_bsc_page_0.h"
+	"ant_bsc_page_1.h"
+	"ant_bsc_page_2.h"
+	"ant_bsc_page_3.h"
+	"ant_bsc_page_4.h"
+	"ant_bsc_page_5.h"
+	"ant_bsc_combined_page_0.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\pages\ant_bsc_page_0.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\pages\ant_bsc_page_1.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\pages\ant_bsc_page_2.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\pages\ant_bsc_page_3.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\pages\ant_bsc_page_4.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\pages\ant_bsc_page_5.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\pages\ant_bsc_combined_page_0.h
+	<stdint.h>
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\ant_bsc_local.h
+	<stdint.h>
+	<stdbool.h>
+	"ant_bsc.h"
+
+1480364701 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\utils\ant_bsc_utils.h
+	"nrf.h"
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\pages\ant_bsc_combined_page_0.c
+	"sdk_common.h"
+	"ant_bsc_combined_page_0.h"
+	"ant_bsc_utils.h"
+	"nrf_log.h"
+
+1480364701 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ant\ant_profiles\ant_bsc\pages\ant_bsc_page_0.c
+	"sdk_common.h"
+	"ant_bsc_page_0.h"
+	"ant_bsc_utils.h"
+	"nrf_log.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\nrf_error.h
+
+1480368301 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\boards\boards.c
+	"boards.h"
+	<stdint.h>
+	<stdbool.h>
+
+1480368301 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\clock\nrf_drv_clock.c
+	"sdk_common.h"
+	"nrf_drv_clock.h"
+	"nrf_error.h"
+	"app_util_platform.h"
+	"softdevice_handler.h"
+	"nrf_sdm.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\clock\nrf_drv_clock.h
+	<stdbool.h>
+	<stdint.h>
+	"sdk_errors.h"
+	"nrf_assert.h"
+	"nrf_clock.h"
+	"sdk_config.h"
+	"nrf_drv_common.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\hal\nrf_clock.h
+	<stddef.h>
+	<stdbool.h>
+	"nrf.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\common\nrf_drv_common.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"sdk_errors.h"
+	"sdk_common.h"
+	"nrf_assert.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\app_util_platform.h
+	<stdint.h>
+	"compiler_abstraction.h"
+	"nrf.h"
+	"nrf_soc.h"
+	"nrf_nvic.h"
+	"nrf_assert.h"
+	"app_error.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\nrf_soc.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf_svc.h"
+	"nrf.h"
+	"nrf_error_soc.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\nrf_svc.h
+	"stdint.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\nrf_error_soc.h
+	"nrf_error.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\nrf_nvic.h
+	<stdint.h>
+	"nrf.h"
+	"nrf_error_soc.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\common\softdevice_handler\softdevice_handler.h
+	<stdlib.h>
+	"nordic_common.h"
+	"nrf_sdm.h"
+	"app_error.h"
+	"app_util.h"
+	"ble_stack_handler_types.h"
+	"ant_stack_handler_types.h"
+	"ble.h"
+	"app_ram_base.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\nrf_sdm.h
+	"nrf_svc.h"
+	"nrf.h"
+	"nrf_soc.h"
+	"nrf_error_sdm.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\nrf_error_sdm.h
+	"nrf_error.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h
+	<stdlib.h>
+	"ble.h"
+	"nrf_sdm.h"
+	"app_error.h"
+	"app_util.h"
+	"sdk_config.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\ble.h
+	"ble_ranges.h"
+	"ble_types.h"
+	"ble_gap.h"
+	"ble_l2cap.h"
+	"ble_gatt.h"
+	"ble_gattc.h"
+	"ble_gatts.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\ble_ranges.h
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\ble_types.h
+	<stdint.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\ble_gap.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"nrf_svc.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\ble_l2cap.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"ble_err.h"
+	"nrf_svc.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\ble_err.h
+	"nrf_error.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\ble_gatt.h
+	"ble_types.h"
+	"ble_ranges.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\ble_gattc.h
+	"ble_gatt.h"
+	"ble_types.h"
+	"ble_ranges.h"
+	"nrf_svc.h"
+	"nrf_error.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\ble_gatts.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"ble_l2cap.h"
+	"ble_gap.h"
+	"ble_gatt.h"
+	"nrf_svc.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\common\softdevice_handler\app_ram_base.h
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\log\nrf_log_ctrl.h
+	"sdk_config.h"
+	"sdk_errors.h"
+	<stdint.h>
+	<stdbool.h>
+	"nrf_log_ctrl_internal.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\log\src\nrf_log_ctrl_internal.h
+	"sdk_common.h"
+	"app_util_platform.h"
+
+1480368301 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\common\nrf_drv_common.c
+	<stddef.h>
+	"nrf_drv_common.h"
+	"nrf_assert.h"
+	"app_util_platform.h"
+	"nrf_peripherals.h"
+	"nrf_drv_power.h"
+	"nrf_drv_clock.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\uart\nrf_drv_uart.c
+	"sdk_common.h"
+	"nrf_drv_uart.h"
+	"nrf_assert.h"
+	"nrf_drv_common.h"
+	"nrf_gpio.h"
+	"app_util_platform.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\uart\nrf_drv_uart.h
+	"nrf_uart.h"
+	"nrf_uarte.h"
+	"sdk_errors.h"
+	"sdk_config.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\hal\nrf_uart.h
+	"nrf.h"
+	"nrf_peripherals.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\hal\nrf_uarte.h
+	"nrf.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\hardfault\hardfault_implementation.c
+	"sdk_common.h"
+	"hardfault.h"
+	"nrf.h"
+	"compiler_abstraction.h"
+	"app_util_platform.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\hardfault\hardfault.h
+	<stdint.h>
+	<stddef.h>
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\log\src\nrf_log_backend_serial.c
+	"sdk_common.h"
+	"nrf_log_backend.h"
+	"nrf_error.h"
+	<stdarg.h>
+	<string.h>
+	<stdio.h>
+	<ctype.h>
+	<SEGGER_RTT_Conf.h>
+	<SEGGER_RTT.h>
+	"nrf_drv_uart.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\log\nrf_log_backend.h
+	"nrf_log_ctrl.h"
+	"sdk_errors.h"
+	<stdbool.h>
+
+1480368306 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\external\segger_rtt\segger_rtt_conf.h
+	"sdk_config.h"
+	"compiler_abstraction.h"
+	"app_util_platform.h"
+	<intrinsics.h>
+
+1480368306 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\external\segger_rtt\segger_rtt.h
+	"SEGGER_RTT_Conf.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\log\src\nrf_log_frontend.c
+	"sdk_common.h"
+	"app_util.h"
+	"app_util_platform.h"
+	"nrf_log.h"
+	"nrf_log_internal.h"
+	"nrf_log_backend.h"
+	"nrf_log_ctrl.h"
+	<string.h>
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\timer\app_timer.c
+	"sdk_common.h"
+	"app_timer.h"
+	<stdlib.h>
+	"nrf.h"
+	"nrf_soc.h"
+	"app_error.h"
+	"nrf_delay.h"
+	"app_util_platform.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\app_error.c
+	"nrf.h"
+	<stdio.h>
+	"app_error.h"
+	"nordic_common.h"
+	"sdk_errors.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\app_error_weak.c
+	"app_error.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\app_util_platform.c
+	"app_util_platform.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\nrf_assert.c
+	"nrf_assert.h"
+	"app_error.h"
+	"nordic_common.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\sdk_errors.c
+	"sdk_errors.h"
+	"nordic_common.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\common\softdevice_handler\softdevice_handler.c
+	"softdevice_handler.h"
+	<stdlib.h>
+	<stdint.h>
+	<stdio.h>
+	<string.h>
+	"nrf.h"
+	"nrf_assert.h"
+	"nrf_soc.h"
+	"nrf_nvic.h"
+	"sdk_common.h"
+	"nrf_drv_clock.h"
+	"app_error.h"
+	"nrf_drv_rng.h"
+	"nrf_log.h"
+	"ant_interface.h"
+	"ant_interface.h"
+	"ble.h"
+
+1490229964 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\toolchain\gcc\gcc_startup_nrf52.s
+	"startup_config.h"
+
+1480368323 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\toolchain\system_nrf52.c
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"system_nrf52.h"
+
+1480368306 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\external\segger_rtt\rtt_syscalls_gcc.c
+	<stdlib.h>
+	"SEGGER_RTT.h"
+
+1490312949 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\external\segger_rtt\segger_rtt.c
+	"SEGGER_RTT.h"
+	<string.h>
+
+1480368306 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\external\segger_rtt\segger_rtt_printf.c
+	"SEGGER_RTT.h"
+	"SEGGER_RTT_Conf.h"
+	<stdlib.h>
+	<stdarg.h>
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\uart\app_uart.h
+	<stdint.h>
+	<stdbool.h>
+	"app_util_platform.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\fifo\app_fifo.c
+	"sdk_common.h"
+	"app_fifo.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\fifo\app_fifo.h
+	<stdint.h>
+	<stdlib.h>
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\uart\app_uart_fifo.c
+	"sdk_common.h"
+	"app_uart.h"
+	"app_fifo.h"
+	"nrf_drv_uart.h"
+	"nrf_assert.h"
+
+1490311327 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\uart\retarget.c
+	"sdk_common.h"
+	<stdio.h>
+	<stdint.h>
+	"app_uart.h"
+	"nrf_error.h"
+
+1453840109 d:\ejs shmc\tech\projects\source\open\printf.h
+	<stdarg.h>
+
+1458693304 source:d:\ejs shmc\tech\projects\source\open\printf.c
+	"printf.h"
+
+1490652120 source:d:\ejs shmc\tech\projects\source\open\string.c
+	<stddef.h>
+
+1480368301 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\ble_dtm\ble_dtm.c
+	"sdk_common.h"
+	"ble_dtm.h"
+	"ble_dtm_hw.h"
+	<stdbool.h>
+	<string.h>
+	"nrf.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\ble_dtm\ble_dtm.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\ble_dtm\ble_dtm_hw.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+
+1480368301 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\ble_dtm\ble_dtm_hw_nrf52.c
+	"ble_dtm_hw.h"
+	"ble_dtm.h"
+	<stdbool.h>
+	<string.h>
+	"nrf.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\systick\nrf_drv_systick.c
+	"sdk_common.h"
+	"nrf_drv_systick.h"
+	"nrf_systick.h"
+	"nrf.h"
+	"nrf_assert.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\systick\nrf_drv_systick.h
+	<stdint.h>
+	<stdbool.h>
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\hal\nrf_systick.h
+	"nrf.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1480368301 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\common\ble_advdata.c
+	"ble_advdata.h"
+	"ble_gap.h"
+	"ble_srv_common.h"
+	"sdk_common.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\common\ble_advdata.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	"ble.h"
+	"app_util.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\common\ble_srv_common.h
+	<stdint.h>
+	<stdbool.h>
+	"ble_types.h"
+	"app_util.h"
+	"ble.h"
+	"ble_gap.h"
+	"ble_gatt.h"
+
+1480368301 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\common\ble_conn_params.c
+	"ble_conn_params.h"
+	<stdlib.h>
+	"nordic_common.h"
+	"ble_hci.h"
+	"app_timer.h"
+	"ble_srv_common.h"
+	"app_util.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\common\ble_conn_params.h
+	<stdint.h>
+	"ble.h"
+	"ble_srv_common.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\softdevice\s132\headers\ble_hci.h
+
+1480368301 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\common\ble_srv_common.c
+	"ble_srv_common.h"
+	<string.h>
+	"nordic_common.h"
+	"app_error.h"
+	"ble.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\scheduler\app_scheduler.h
+	"sdk_config.h"
+	<stdint.h>
+	"app_error.h"
+	"app_util.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\transport\ser_hal_transport.h
+	<stdint.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\ser_conn_handlers.h
+	<stdint.h>
+	"nordic_common.h"
+	"app_util.h"
+	"ble_stack_handler_types.h"
+	"ant_stack_handler_types.h"
+	"softdevice_handler.h"
+	"ble.h"
+	"ser_hal_transport.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\transport\ser_phy_debug_comm.h
+	<stdint.h>
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\scheduler\app_scheduler.c
+	"sdk_common.h"
+	"app_scheduler.h"
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	"nrf_soc.h"
+	"nrf_assert.h"
+	"app_util_platform.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\scheduler\app_scheduler_serconn.c
+	"app_scheduler.h"
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	"nrf_soc.h"
+	"nrf_assert.h"
+	"app_util.h"
+	"app_util_platform.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\uart\app_uart.c
+	"sdk_common.h"
+	"app_uart.h"
+	"nrf_drv_uart.h"
+	"nrf_assert.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\ble_serialization.c
+	"ble_serialization.h"
+	"nrf_error.h"
+	"app_util.h"
+	<stddef.h>
+	<string.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\ble_serialization.h
+	"nordic_common.h"
+	"nrf_error.h"
+	<stdint.h>
+	<stddef.h>
+	"cond_field_serialization.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\cond_field_serialization.h
+	<stdint.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\cond_field_serialization.c
+	"nrf_error.h"
+	"cond_field_serialization.h"
+	"ble_serialization.h"
+	<stddef.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\ser_dbg_sd_str.c
+	"ser_dbg_sd_str.h"
+	"ble_ranges.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	<string.h>
+	"sdk_common.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\ser_dbg_sd_str.h
+	<stdint.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\struct_ser\s132\ble_gap_struct_serialization.c
+	"ble_gap_struct_serialization.h"
+	"ble_serialization.h"
+	"cond_field_serialization.h"
+	"app_util.h"
+	"string.h"
+	"ble_gatts.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\struct_ser\s132\ble_gap_struct_serialization.h
+	"ble_gap.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\struct_ser\s132\ble_gatt_struct_serialization.c
+	"ble_serialization.h"
+	"ble_struct_serialization.h"
+	"ble_gatt_struct_serialization.h"
+	"cond_field_serialization.h"
+	"app_util.h"
+	"ble_gatt.h"
+	<string.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\struct_ser\s132\ble_struct_serialization.h
+	"ble_types.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\struct_ser\s132\ble_gatt_struct_serialization.h
+	"ble_gatt.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\struct_ser\s132\ble_gattc_struct_serialization.c
+	"ble_gatt_struct_serialization.h"
+	"ble_gattc_struct_serialization.h"
+	"ble_struct_serialization.h"
+	"ble_serialization.h"
+	"app_util.h"
+	"ble_gattc.h"
+	"cond_field_serialization.h"
+	<string.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\struct_ser\s132\ble_gattc_struct_serialization.h
+	"ble_gattc.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\struct_ser\s132\ble_gatts_struct_serialization.c
+	"ble_gatt_struct_serialization.h"
+	"ble_gatts_struct_serialization.h"
+	"ble_gap_struct_serialization.h"
+	"ble_struct_serialization.h"
+	"ble_serialization.h"
+	"app_util.h"
+	"ble_gatts.h"
+	"cond_field_serialization.h"
+	<string.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\struct_ser\s132\ble_gatts_struct_serialization.h
+	"ble_gatts.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\struct_ser\s132\ble_struct_serialization.c
+	"ble_struct_serialization.h"
+	"ble_gap_struct_serialization.h"
+	"ble_gatt_struct_serialization.h"
+	"ble_gatts_struct_serialization.h"
+	"ble_serialization.h"
+	"app_util.h"
+	"ble_types.h"
+	"ble_l2cap.h"
+	"ble.h"
+	"cond_field_serialization.h"
+	<string.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\struct_ser\s132\nrf_soc_struct_serialization.c
+	"nrf_soc_struct_serialization.h"
+	"ble_serialization.h"
+	"cond_field_serialization.h"
+	"app_util.h"
+	"string.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\struct_ser\s132\nrf_soc_struct_serialization.h
+	"nrf_soc.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\transport\ser_hal_transport.c
+	<stdbool.h>
+	<string.h>
+	"app_error.h"
+	"ser_config.h"
+	"ser_phy.h"
+	"ser_hal_transport.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\ser_config.h
+	<stdint.h>
+	"nrf.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\transport\ser_phy\ser_phy.h
+	<stdint.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\common\ble_dtm_init.c
+	"ble_dtm_conn.h"
+	"dtm_uart.h"
+	"nrf_error.h"
+	"ble_serialization.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\common\ble_dtm_conn.h
+	"dtm_uart.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\hal\dtm_uart.h
+	<stdint.h>
+	"dtm_uart_params.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\transport\dtm_uart_params.h
+	<stdbool.h>
+	<stdint.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\transport\ser_phy\ser_phy_uart.c
+	"ser_phy.h"
+	<stdint.h>
+	<stdlib.h>
+	<string.h>
+	"nordic_common.h"
+	"nrf.h"
+	"nrf_error.h"
+	"nrf_gpio.h"
+	"app_util.h"
+	"app_uart.h"
+	"app_error.h"
+	"nrf_drv_uart.h"
+	"ser_phy_config_conn.h"
+	"ser_phy_config_app.h"
+	"boards.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\transport\ser_phy\config\ser_phy_config_conn.h
+	"boards.h"
+	"ser_config.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\transport\ser_phy\config\ser_phy_config_app.h
+	"boards.h"
+	"ser_config.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\common\conn_mw.c
+	<stddef.h>
+	"ble_serialization.h"
+	"nrf_soc.h"
+	"ble.h"
+	"ble_l2cap.h"
+	"ble_gap.h"
+	"ble_gattc.h"
+	"ble_gatts.h"
+	"conn_mw_items.c"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\middleware\conn_mw_items.c
+	"conn_mw_nrf_soc.h"
+	"conn_mw_ble.h"
+	"conn_mw_ble_l2cap.h"
+	"conn_mw_ble_gap.h"
+	"conn_mw_ble_gatts.h"
+	"conn_mw_ble_gattc.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\middleware\conn_mw_nrf_soc.h
+	<stdint.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\middleware\conn_mw_ble.h
+	<stdint.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\middleware\conn_mw_ble_l2cap.h
+	<stdint.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\middleware\conn_mw_ble_gap.h
+	<stdint.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\middleware\conn_mw_ble_gatts.h
+	<stdint.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\middleware\conn_mw_ble_gattc.h
+	<stdint.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\middleware\conn_mw_ble.c
+	"ble_conn.h"
+	"conn_mw_ble.h"
+	"ble_serialization.h"
+	"conn_ble_user_mem.h"
+	<string.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_conn.h
+	"ble.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\conn_ble_user_mem.h
+	"ble.h"
+	"ser_config.h"
+	<stdint.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\middleware\conn_mw_ble_gap.c
+	"ble_gap_conn.h"
+	"conn_mw_ble_gap.h"
+	"ble_serialization.h"
+	"conn_ble_gap_sec_keys.h"
+	<stddef.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_gap_conn.h
+	"ble_gap.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\conn_ble_gap_sec_keys.h
+	"ble_gap.h"
+	<stdint.h>
+
+1490565723 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\common\transport\ser_phy\ser_phy.c
+	"ser_phy.h"
+	"app_error.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\middleware\conn_mw_ble_gattc.c
+	"ble_gattc_conn.h"
+	"conn_mw_ble_gattc.h"
+	"ble_serialization.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_gattc_conn.h
+	"ble_gattc.h"
+	"ble.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\middleware\conn_mw_ble_gatts.c
+	"ble_gatts_conn.h"
+	"conn_mw_ble_gatts.h"
+	"ble_serialization.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_gatts_conn.h
+	"ble_gatts.h"
+	"ble.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\middleware\conn_mw_ble_l2cap.c
+	"ble_l2cap_conn.h"
+	"conn_mw_ble_l2cap.h"
+	"ble_serialization.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_l2cap_conn.h
+	"ble.h"
+	"ble_types.h"
+	"ble_ranges.h"
+	"ble_err.h"
+	"ble_l2cap.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\middleware\conn_mw_nrf_soc.c
+	"nrf_soc_conn.h"
+	"conn_mw_nrf_soc.h"
+	"ble_serialization.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\nrf_soc_conn.h
+	"nrf_soc.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_conn.c
+	<string.h>
+	"ble_conn.h"
+	"ble_serialization.h"
+	"cond_field_serialization.h"
+	"ble_struct_serialization.h"
+	"ble_gap_struct_serialization.h"
+	"app_util.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_event_enc.c
+	"ble_conn.h"
+	"ble_evt_conn.h"
+	"ble_gap_evt_conn.h"
+	"ble_gattc_evt_conn.h"
+	"ble_gatts_evt_conn.h"
+	"ble_l2cap_evt_conn.h"
+	"ble_serialization.h"
+	"app_util.h"
+	"nrf_log.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_evt_conn.h
+	"ble.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_gap_evt_conn.h
+	"ble.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_gattc_evt_conn.h
+	"ble.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_gatts_evt_conn.h
+	"ble.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_l2cap_evt_conn.h
+	"ble.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_evt_conn.c
+	"ble_evt_conn.h"
+	<string.h>
+	"ble_serialization.h"
+	"ble_struct_serialization.h"
+	"app_util.h"
+	"conn_ble_user_mem.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_gap_conn.c
+	"ble_gap_conn.h"
+	<string.h>
+	"ble_serialization.h"
+	"cond_field_serialization.h"
+	"ble_gap_struct_serialization.h"
+	"app_util.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_gap_evt_conn.c
+	"ble.h"
+	"ble_gap_evt_conn.h"
+	<string.h>
+	"ble_serialization.h"
+	"cond_field_serialization.h"
+	"ble_gap_struct_serialization.h"
+	"conn_ble_gap_sec_keys.h"
+	"app_util.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_gattc_conn.c
+	"ble_gattc_conn.h"
+	"ble_serialization.h"
+	"ble_struct_serialization.h"
+	"ble_gattc_struct_serialization.h"
+	"cond_field_serialization.h"
+	"app_util.h"
+	<string.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_gattc_evt_conn.c
+	"ble_gattc_evt_conn.h"
+	"ble_serialization.h"
+	"ble_gattc_struct_serialization.h"
+	"app_util.h"
+	<string.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_gatts_conn.c
+	"ble_gatts_conn.h"
+	<string.h>
+	"ble_serialization.h"
+	"ble_struct_serialization.h"
+	"ble_gatts_struct_serialization.h"
+	"app_util.h"
+	"cond_field_serialization.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_gatts_evt_conn.c
+	"ble_gatts_evt_conn.h"
+	"ble_serialization.h"
+	"ble_gatts_struct_serialization.h"
+	"conn_ble_user_mem.h"
+	"app_util.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_l2cap_conn.c
+	<stdlib.h>
+	<string.h>
+	"ble_l2cap_conn.h"
+	"ble_serialization.h"
+	"ble_struct_serialization.h"
+	"cond_field_serialization.h"
+	"app_util.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\ble_l2cap_evt_conn.c
+	"ble_l2cap_evt_conn.h"
+	<string.h>
+	"ble_serialization.h"
+	"ble_struct_serialization.h"
+	"app_util.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\conn_ble_gap_sec_keys.c
+	"conn_ble_gap_sec_keys.h"
+	"nrf_error.h"
+	<stddef.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\conn_ble_user_mem.c
+	"conn_ble_user_mem.h"
+	"ser_config.h"
+	"nrf_error.h"
+	<stddef.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\s132\serializers\nrf_soc_conn.c
+	"nrf_soc.h"
+	"nrf_soc_conn.h"
+	"nrf_error.h"
+	"ble_serialization.h"
+	"cond_field_serialization.h"
+	"nrf_soc_struct_serialization.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\hal\dtm_uart.c
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"ble_dtm.h"
+	"nrf_gpio.h"
+	"dtm_uart.h"
+	"nrf_error.h"
+	"app_util.h"
+	"nrf_drv_uart.h"
+	"app_util_platform.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\ser_conn_cmd_decoder.c
+	<stdint.h>
+	<string.h>
+	"nordic_common.h"
+	"app_error.h"
+	"ble_serialization.h"
+	"ser_config.h"
+	"conn_mw.h"
+	"ser_hal_transport.h"
+	"ser_conn_cmd_decoder.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\codecs\common\conn_mw.h
+	<stdint.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\ser_conn_cmd_decoder.h
+	<stdint.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\ser_conn_dtm_cmd_decoder.c
+	"app_util.h"
+	"ble_dtm_conn.h"
+	"ble_serialization.h"
+	"nrf_error.h"
+	"softdevice_handler.h"
+	"ser_conn_dtm_cmd_decoder.h"
+	"ser_hal_transport.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\ser_conn_dtm_cmd_decoder.h
+	<stdint.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\ser_conn_error_handling.c
+	"nrf_assert.h"
+	"app_error.h"
+	"ser_config.h"
+	"boards.h"
+	"app_util_platform.h"
+	"nrf_soc.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\ser_conn_event_encoder.c
+	<string.h>
+	<stdint.h>
+	"app_error.h"
+	"app_scheduler.h"
+	"ble_conn.h"
+	"ble_serialization.h"
+	"ser_config.h"
+	"ser_hal_transport.h"
+	"ser_conn_event_encoder.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\ser_conn_event_encoder.h
+	<stdint.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\ser_conn_handlers.c
+	<string.h>
+	"app_error.h"
+	"app_scheduler.h"
+	"ser_config.h"
+	"ser_conn_handlers.h"
+	"ser_conn_event_encoder.h"
+	"ser_conn_pkt_decoder.h"
+	"ser_conn_dtm_cmd_decoder.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\ser_conn_pkt_decoder.h
+	<stdint.h>
+	"ser_hal_transport.h"
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\ser_conn_pkt_decoder.c
+	<stdint.h>
+	<string.h>
+	"nordic_common.h"
+	"app_error.h"
+	"softdevice_handler.h"
+	"ble_serialization.h"
+	"ser_config.h"
+	"ser_hal_transport.h"
+	"ser_conn_pkt_decoder.h"
+	"ser_conn_cmd_decoder.h"
+	"ser_conn_dtm_cmd_decoder.h"
+	"ser_conn_reset_cmd_decoder.h"
+	"ser_dbg_sd_str.h"
+	"nrf_log.h"
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\ser_conn_reset_cmd_decoder.h
+	<stdint.h>
+
+1480368303 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\serialization\connectivity\ser_conn_reset_cmd_decoder.c
+	"nrf_nvic.h"
+	"ser_conn_reset_cmd_decoder.h"
+
+1480368301 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\ble_advertising\ble_advertising.c
+	"sdk_common.h"
+	"ble_advdata.h"
+	"ble_advertising.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	"fstorage.h"
+	"sdk_errors.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\ble_advertising\ble_advertising.h
+	<stdint.h>
+	"nrf_error.h"
+	"ble.h"
+	"ble_gattc.h"
+	"ble_advdata.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\fstorage\fstorage.h
+	<stdint.h>
+	<stdbool.h>
+	"section_vars.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\experimental_section_vars\section_vars.h
+
+1480368301 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\ble_services\ble_nus\ble_nus.c
+	"sdk_common.h"
+	"ble_nus.h"
+	"ble_srv_common.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\ble\ble_services\ble_nus\ble_nus.h
+	"ble.h"
+	"ble_srv_common.h"
+	<stdint.h>
+	<stdbool.h>
+
+1480368301 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\gpiote\nrf_drv_gpiote.c
+	"sdk_common.h"
+	"nrf_drv_gpiote.h"
+	"nrf_drv_common.h"
+	"app_util_platform.h"
+	"nrf_assert.h"
+	"nrf_bitmask.h"
+	<string.h>
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\gpiote\nrf_drv_gpiote.h
+	"nrf_gpiote.h"
+	"nrf_gpio.h"
+	"sdk_errors.h"
+	<stdint.h>
+	<stdbool.h>
+	"sdk_config.h"
+
+1480368301 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\drivers_nrf\hal\nrf_gpiote.h
+	"nrf_peripherals.h"
+	"nrf.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1480368303 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\util\nrf_bitmask.h
+	"compiler_abstraction.h"
+	<stdint.h>
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\bsp\bsp_btn_ble.h
+	<stdint.h>
+	"ble.h"
+	"bsp.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\button\app_button.c
+	"sdk_common.h"
+	"app_button.h"
+	"app_timer.h"
+	"app_error.h"
+	"nrf_drv_gpiote.h"
+	"nrf_assert.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\bsp\bsp.c
+	"bsp.h"
+	<stddef.h>
+	<stdio.h>
+	"nordic_common.h"
+	"nrf.h"
+	"nrf_gpio.h"
+	"nrf_error.h"
+	"bsp_config.h"
+	"boards.h"
+	"app_timer.h"
+	"app_button.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\bsp\bsp_config.h
+	<stdint.h>
+	<stdbool.h>
+	"boards.h"
+	"app_button.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\bsp\bsp_btn_ble.c
+	"bsp_btn_ble.h"
+	<stdint.h>
+	<stdbool.h>
+	<stddef.h>
+	"ble.h"
+	"bsp.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\bsp\bsp_nfc.c
+	"bsp_nfc.h"
+	"bsp.h"
+	"nrf_peripherals.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\bsp\bsp_nfc.h
+	<stdint.h>
+	"sdk_errors.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\fstorage\fstorage.c
+	"sdk_common.h"
+	"fstorage.h"
+	"fstorage_internal_defs.h"
+	<stdint.h>
+	<string.h>
+	<stdbool.h>
+	"nrf_error.h"
+	"nrf_soc.h"
+
+1480368302 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\fstorage\fstorage_internal_defs.h
+	"nrf.h"
+
+1480368302 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_12.2.0\components\libraries\hardfault\nrf52\handler\hardfault_handler_gcc.c
+	"sdk_common.h"
+	<stdint.h>
+	"compiler_abstraction.h"
+
+1489150925 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_dtm\ble_dtm.c
+	"sdk_common.h"
+	"ble_dtm.h"
+	"ble_dtm_hw.h"
+	<stdbool.h>
+	<string.h>
+	"nrf.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\sdk_common.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	"sdk_config.h"
+	"nordic_common.h"
+	"compiler_abstraction.h"
+	"sdk_os.h"
+	"sdk_errors.h"
+	"app_util.h"
+	"sdk_macros.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\nordic_common.h
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\compiler_abstraction.h
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\sdk_os.h
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\sdk_errors.h
+	<stdint.h>
+	"nrf_error.h"
+	"sdk_config.h"
+
+1488792935 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_error.h
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_util.h
+	<stdint.h>
+	<stdbool.h>
+	"compiler_abstraction.h"
+	"nordic_common.h"
+	"nrf.h"
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\nrf.h
+	"nrf51.h"
+	"nrf51_bitfields.h"
+	"nrf51_deprecated.h"
+	"nrf52840.h"
+	"nrf52840_bitfields.h"
+	"nrf51_to_nrf52840.h"
+	"nrf52_to_nrf52840.h"
+	"nrf52.h"
+	"nrf52_bitfields.h"
+	"nrf51_to_nrf52.h"
+	"nrf52_name_change.h"
+	"compiler_abstraction.h"
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\nrf51.h
+	"core_cm0.h"
+	"system_nrf51.h"
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\system_nrf51.h
+	<stdint.h>
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\nrf51_bitfields.h
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\nrf51_deprecated.h
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\nrf52840.h
+	"core_cm4.h"
+	"system_nrf52840.h"
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\system_nrf52840.h
+	<stdint.h>
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\nrf52840_bitfields.h
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\nrf51_to_nrf52840.h
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\nrf52_to_nrf52840.h
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\nrf52.h
+	"core_cm4.h"
+	"system_nrf52.h"
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\system_nrf52.h
+	<stdint.h>
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\nrf52_bitfields.h
+
+1489147681 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\nrf51_to_nrf52.h
+
+1489147682 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\nrf52_name_change.h
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\sdk_macros.h
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_dtm\ble_dtm.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_dtm\ble_dtm_hw.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+
+1489150925 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_dtm\ble_dtm_hw_nrf52.c
+	"ble_dtm_hw.h"
+	"ble_dtm.h"
+	<stdbool.h>
+	<string.h>
+	"nrf.h"
+
+1489150925 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_advdata.c
+	"ble_advdata.h"
+	"ble_gap.h"
+	"ble_srv_common.h"
+	"sdk_common.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_advdata.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	"ble.h"
+	"app_util.h"
+
+1488792935 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble.h
+	"ble_ranges.h"
+	"ble_types.h"
+	"ble_gap.h"
+	"ble_l2cap.h"
+	"ble_gatt.h"
+	"ble_gattc.h"
+	"ble_gatts.h"
+
+1488792935 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_ranges.h
+
+1488792935 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_types.h
+	<stdint.h>
+
+1488792935 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_gap.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"nrf_svc.h"
+
+1488792935 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_svc.h
+	"stdint.h"
+
+1488792935 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_l2cap.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"ble_err.h"
+	"nrf_svc.h"
+
+1488792935 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_err.h
+	"nrf_error.h"
+
+1488792935 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_gatt.h
+	"ble_types.h"
+	"ble_ranges.h"
+
+1488792935 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_gattc.h
+	"ble_gatt.h"
+	"ble_types.h"
+	"ble_ranges.h"
+	"nrf_svc.h"
+	"nrf_error.h"
+	"nrf.h"
+
+1488792935 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_gatts.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"ble_l2cap.h"
+	"ble_gap.h"
+	"ble_gatt.h"
+	"nrf_svc.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_srv_common.h
+	<stdint.h>
+	<stdbool.h>
+	"ble_types.h"
+	"app_util.h"
+	"ble.h"
+	"ble_gap.h"
+	"ble_gatt.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\sdk_common.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	"sdk_config.h"
+	"nordic_common.h"
+	"compiler_abstraction.h"
+	"sdk_os.h"
+	"sdk_errors.h"
+	"app_util.h"
+	"sdk_macros.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\nordic_common.h
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\compiler_abstraction.h
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\sdk_os.h
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\sdk_errors.h
+	<stdint.h>
+	"nrf_error.h"
+	"sdk_config.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\nrf_soc_nosd\nrf_error.h
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_util.h
+	<stdint.h>
+	<stdbool.h>
+	"compiler_abstraction.h"
+	"nordic_common.h"
+	"nrf.h"
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf.h
+	"nrf51.h"
+	"nrf51_bitfields.h"
+	"nrf51_deprecated.h"
+	"nrf52840.h"
+	"nrf52840_bitfields.h"
+	"nrf51_to_nrf52840.h"
+	"nrf52_to_nrf52840.h"
+	"nrf52.h"
+	"nrf52_bitfields.h"
+	"nrf51_to_nrf52.h"
+	"nrf52_name_change.h"
+	"compiler_abstraction.h"
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51.h
+	"core_cm0.h"
+	"system_nrf51.h"
+
+1489147646 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\core_cm0.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+
+1489147646 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\core_cminstr.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1489147646 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\cmsis_armcc.h
+
+1489147646 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\cmsis_armcc_v6.h
+
+1489147646 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\cmsis_gcc.h
+
+1489147646 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\core_cmfunc.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\system_nrf51.h
+	<stdint.h>
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51_bitfields.h
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51_deprecated.h
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52840.h
+	"core_cm4.h"
+	"system_nrf52840.h"
+
+1489147646 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\core_cm4.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+	"core_cmSimd.h"
+
+1489147646 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\core_cmsimd.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\system_nrf52840.h
+	<stdint.h>
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52840_bitfields.h
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51_to_nrf52840.h
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52_to_nrf52840.h
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52.h
+	"core_cm4.h"
+	"system_nrf52.h"
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\system_nrf52.h
+	<stdint.h>
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52_bitfields.h
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51_to_nrf52.h
+
+1489147682 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52_name_change.h
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\sdk_macros.h
+
+1489150925 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_conn_params.c
+	"ble_conn_params.h"
+	<stdlib.h>
+	"nordic_common.h"
+	"ble_hci.h"
+	"app_timer.h"
+	"ble_srv_common.h"
+	"app_util.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_conn_params.h
+	<stdint.h>
+	"ble.h"
+	"ble_srv_common.h"
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\ble.h
+	"ble_ranges.h"
+	"ble_types.h"
+	"ble_gap.h"
+	"ble_l2cap.h"
+	"ble_gatt.h"
+	"ble_gattc.h"
+	"ble_gatts.h"
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\ble_ranges.h
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\ble_types.h
+	<stdint.h>
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\ble_gap.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"nrf_svc.h"
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\nrf_svc.h
+	"stdint.h"
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\ble_l2cap.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"ble_err.h"
+	"nrf_svc.h"
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\ble_err.h
+	"nrf_error.h"
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\nrf_error.h
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\ble_gatt.h
+	"ble_types.h"
+	"ble_ranges.h"
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\ble_gattc.h
+	"ble_gatt.h"
+	"ble_types.h"
+	"ble_ranges.h"
+	"nrf_svc.h"
+	"nrf_error.h"
+	"nrf.h"
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\ble_gatts.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"ble_l2cap.h"
+	"ble_gap.h"
+	"ble_gatt.h"
+	"nrf_svc.h"
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\ble_hci.h
+
+1489150925 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_srv_common.c
+	"ble_srv_common.h"
+	<string.h>
+	"nordic_common.h"
+	"app_error.h"
+	"ble.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_error.h
+	<stdint.h>
+	<stdio.h>
+	<stdbool.h>
+	"nrf.h"
+	"sdk_errors.h"
+	"nordic_common.h"
+	"app_error_weak.h"
+	"ant_error.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_error_weak.h
+
+1489150925 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\boards.c
+	"boards.h"
+	<stdint.h>
+	<stdbool.h>
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\boards.h
+	"nrf_gpio.h"
+	"nrf6310.h"
+	"pca10000.h"
+	"pca10001.h"
+	"pca10000.h"
+	"pca10003.h"
+	"pca20006.h"
+	"pca10028.h"
+	"pca10031.h"
+	"pca10036.h"
+	"pca10040.h"
+	"pca10056.h"
+	"wt51822.h"
+	"n5_starterkit.h"
+	"d52_starterkit.h"
+	"arduino_primo.h"
+	"custom_board.h"
+
+1497259369 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_gpio.h
+	"nrf.h"
+	"nrf_peripherals.h"
+	"nrf_assert.h"
+	<stdbool.h>
+	<stdlib.h>
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_peripherals.h
+	"nrf51422_peripherals.h"
+	"nrf51802_peripherals.h"
+	"nrf51822_peripherals.h"
+	"nrf52832_peripherals.h"
+	"nrf52840_peripherals.h"
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51422_peripherals.h
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51802_peripherals.h
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51822_peripherals.h
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52832_peripherals.h
+
+1489147681 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52840_peripherals.h
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\nrf_assert.h
+	<stdint.h>
+	"nrf.h"
+	"app_error.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\nrf6310.h
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10000.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10001.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10003.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca20006.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10028.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10031.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10036.h
+	"nrf_gpio.h"
+
+1497215099 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10040.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10056.h
+	"nrf_gpio.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\wt51822.h
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\n5_starterkit.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\d52_starterkit.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\arduino_primo.h
+
+1489150925 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_services\ble_nus\ble_nus.c
+	"sdk_common.h"
+	"ble_nus.h"
+	"ble_srv_common.h"
+	"ble.h"
+	"nrf_log.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_services\ble_nus\ble_nus.h
+	"sdk_config.h"
+	"ble_stack_handler_types.h"
+	"ble.h"
+	"ble_srv_common.h"
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h
+	<stdlib.h>
+	"ble.h"
+	"nrf_sdm.h"
+	"app_error.h"
+	"app_util.h"
+	"sdk_config.h"
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\nrf_sdm.h
+	"nrf_svc.h"
+	"nrf.h"
+	"nrf_soc.h"
+	"nrf_error_sdm.h"
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\nrf_soc.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf_svc.h"
+	"nrf.h"
+	"nrf_error_soc.h"
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\nrf_error_soc.h
+	"nrf_error.h"
+
+1485452562 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s140\headers\nrf_error_sdm.h
+	"nrf_error.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_srv_common.h
+	<stdint.h>
+	<stdbool.h>
+	"ble_types.h"
+	"app_util.h"
+	"ble.h"
+	"ble_gap.h"
+	"ble_gatt.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\nrf_log.h
+	"sdk_common.h"
+	"nrf_strerror.h"
+	"nrf_log_internal.h"
+
+1494018414 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\strerror\nrf_strerror.h
+	"sdk_errors.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\src\nrf_log_internal.h
+	"sdk_common.h"
+	"nrf.h"
+	"nrf_error.h"
+	"app_util.h"
+	<stdint.h>
+	<stdbool.h>
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble.h
+	"ble_ranges.h"
+	"ble_types.h"
+	"ble_gap.h"
+	"ble_l2cap.h"
+	"ble_gatt.h"
+	"ble_gattc.h"
+	"ble_gatts.h"
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_ranges.h
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_types.h
+	<stdint.h>
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_gap.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"nrf_svc.h"
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_svc.h
+	"stdint.h"
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_l2cap.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"ble_err.h"
+	"nrf_svc.h"
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_err.h
+	"nrf_error.h"
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_error.h
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_gatt.h
+	"ble_types.h"
+	"ble_ranges.h"
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_gattc.h
+	"ble_gatt.h"
+	"ble_types.h"
+	"ble_ranges.h"
+	"nrf_svc.h"
+	"nrf_error.h"
+	"nrf.h"
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_gatts.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"ble_l2cap.h"
+	"ble_gap.h"
+	"ble_gatt.h"
+	"nrf_svc.h"
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_sdm.h
+	"nrf_svc.h"
+	"nrf.h"
+	"nrf_soc.h"
+	"nrf_error_sdm.h"
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_soc.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf_svc.h"
+	"nrf.h"
+	"nrf_error_soc.h"
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_error_soc.h
+	"nrf_error.h"
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_error_sdm.h
+	"nrf_error.h"
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_hci.h
+
+1492619926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\timer\app_timer.h
+	"sdk_config.h"
+	"app_error.h"
+	"app_util.h"
+	"compiler_abstraction.h"
+	<stdint.h>
+	<stdbool.h>
+	<stdio.h>
+	"FreeRTOSConfig.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\common\nrf_drv_common.c
+	<stddef.h>
+	"nrf_drv_common.h"
+	"nrf_assert.h"
+	"app_util_platform.h"
+	"nrf_peripherals.h"
+	"nrf_drv_power.h"
+	"nrf_drv_clock.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\common\nrf_drv_common.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"sdk_errors.h"
+	"sdk_common.h"
+	"nrf_assert.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_util_platform.h
+	<stdint.h>
+	"compiler_abstraction.h"
+	"nrf.h"
+	"nrf_soc.h"
+	"nrf_nvic.h"
+	"nrf_assert.h"
+	"app_error.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\nrf_soc_nosd\nrf_soc.h
+	<stdint.h>
+	"nrf.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\nrf_soc_nosd\nrf_nvic.h
+	<stdint.h>
+	"nrf.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\power\nrf_drv_power.h
+	<stdbool.h>
+	<stdint.h>
+	"nrf_power.h"
+	"sdk_config.h"
+	"nrf_drv_common.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_power.h
+	"nrf.h"
+	"sdk_config.h"
+	"nordic_common.h"
+	"nrf_assert.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\common\nrf_drv_common.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"sdk_errors.h"
+	"sdk_common.h"
+	"nrf_assert.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\clock\nrf_drv_clock.h
+	<stdbool.h>
+	<stdint.h>
+	"sdk_errors.h"
+	"nrf_assert.h"
+	"nrf_clock.h"
+	"sdk_config.h"
+	"nrf_drv_common.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_clock.h
+	<stddef.h>
+	<stdbool.h>
+	"nrf.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\nrf_log_ctrl.h
+	"sdk_config.h"
+	"sdk_errors.h"
+	<stdint.h>
+	<stdbool.h>
+	"nrf_log_ctrl_internal.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\src\nrf_log_ctrl_internal.h
+	"sdk_common.h"
+	"app_util_platform.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\gpiote\nrf_drv_gpiote.c
+	"sdk_common.h"
+	"nrf_drv_gpiote.h"
+	"nrf_drv_common.h"
+	"app_util_platform.h"
+	"nrf_assert.h"
+	"nrf_bitmask.h"
+	<string.h>
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\gpiote\nrf_drv_gpiote.h
+	"nrf_gpiote.h"
+	"nrf_gpio.h"
+	"sdk_errors.h"
+	<stdint.h>
+	<stdbool.h>
+	"sdk_config.h"
+
+1493939752 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_advertising\ble_advertising.c
+	"sdk_common.h"
+	"ble_advdata.h"
+	"ble_advertising.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	"fstorage.h"
+	"sdk_errors.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_advdata.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	"ble.h"
+	"app_util.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_advertising\ble_advertising.h
+	<stdint.h>
+	"nrf_error.h"
+	"ble.h"
+	"ble_gattc.h"
+	"ble_advdata.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\fstorage\fstorage.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf_section.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\experimental_section_vars\nrf_section.h
+	"nordic_common.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\clock\nrf_drv_clock.c
+	"sdk_common.h"
+	"nrf_drv_clock.h"
+	"nrf_error.h"
+	"app_util_platform.h"
+	"softdevice_handler.h"
+	"nrf_sdm.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\clock\nrf_drv_clock.h
+	<stdbool.h>
+	<stdint.h>
+	"sdk_errors.h"
+	"nrf_assert.h"
+	"nrf_clock.h"
+	"sdk_config.h"
+	"nrf_drv_common.h"
+
+1488792935 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_nvic.h
+	<stdint.h>
+	"nrf.h"
+	"nrf_error_soc.h"
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\common\softdevice_handler\softdevice_handler.h
+	<stdlib.h>
+	"nordic_common.h"
+	"nrf_sdm.h"
+	"app_error.h"
+	"app_util.h"
+	"ble_stack_handler_types.h"
+	"ant_stack_handler_types.h"
+	"ble.h"
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h
+	<stdlib.h>
+	<stdint.h>
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_gpiote.h
+	"nrf_peripherals.h"
+	"nrf.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\nrf_bitmask.h
+	"compiler_abstraction.h"
+	<stdint.h>
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\systick\nrf_drv_systick.c
+	"sdk_common.h"
+	"nrf_drv_systick.h"
+	"nrf_systick.h"
+	"nrf.h"
+	"nrf_assert.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\systick\nrf_drv_systick.h
+	<stdint.h>
+	<stdbool.h>
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_systick.h
+	"nrf.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\config\sdk_config.h
+	"app_config.h"
+
+1497388451 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\twi_master\nrf_drv_twi.c
+	"sdk_common.h"
+	"nrf_drv_twi.h"
+	"nrf_drv_common.h"
+	"nrf_gpio.h"
+	"nrf_assert.h"
+	"app_util_platform.h"
+	"nrf_delay.h"
+	<stdio.h>
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\twi_master\nrf_drv_twi.h
+	"nordic_common.h"
+	"sdk_config.h"
+	"nrf_twi.h"
+	"nrf_twim.h"
+	"sdk_errors.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_twi.h
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+	"nrf_peripherals.h"
+	"nrf.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_twim.h
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+	"nrf.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\delay\nrf_delay.h
+	"nrf.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\uart\nrf_drv_uart.c
+	"sdk_common.h"
+	"nrf_drv_uart.h"
+	"nrf_assert.h"
+	"nrf_drv_common.h"
+	"nrf_gpio.h"
+	"app_util_platform.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\uart\nrf_drv_uart.h
+	"nrf_uart.h"
+	"nrf_uarte.h"
+	"sdk_errors.h"
+	"sdk_config.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_uart.h
+	"nrf.h"
+	"nrf_peripherals.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_uarte.h
+	"nrf.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\bsp\bsp_btn_ble.c
+	"bsp_btn_ble.h"
+	<stdint.h>
+	<stdbool.h>
+	<stddef.h>
+	"ble.h"
+	"bsp.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\bsp\bsp_btn_ble.h
+	<stdint.h>
+	"ble.h"
+	"bsp.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\bsp\bsp.h
+	<stdint.h>
+	<stdbool.h>
+	"boards.h"
+	"app_button.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\boards.h
+	"nrf_gpio.h"
+	"nrf6310.h"
+	"pca10000.h"
+	"pca10001.h"
+	"pca10000.h"
+	"pca10003.h"
+	"pca20006.h"
+	"pca10028.h"
+	"pca10031.h"
+	"pca10036.h"
+	"pca10040.h"
+	"pca10056.h"
+	"wt51822.h"
+	"n5_starterkit.h"
+	"d52_starterkit.h"
+	"arduino_primo.h"
+	"custom_board.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\nrf6310.h
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10000.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10001.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10003.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca20006.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10028.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10031.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10036.h
+	"nrf_gpio.h"
+
+1497215099 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10040.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\pca10056.h
+	"nrf_gpio.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\wt51822.h
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\n5_starterkit.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\d52_starterkit.h
+	"nrf_gpio.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\boards\arduino_primo.h
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\button\app_button.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"app_error.h"
+	"nrf_gpio.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\bsp\bsp_nfc.c
+	"bsp_nfc.h"
+	"bsp.h"
+	"nrf.h"
+	"app_util_platform.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\bsp\bsp_nfc.h
+	<stdint.h>
+	"sdk_errors.h"
+
+1497261891 d:\ejs shmc\tech\projects\nrf52\inc\app_config.h
+	<stdint.h>
+
+1494757111 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\bsp\bsp.c
+	"bsp.h"
+	<stddef.h>
+	<stdio.h>
+	"nordic_common.h"
+	"nrf.h"
+	"nrf_gpio.h"
+	"nrf_error.h"
+	"bsp_config.h"
+	"boards.h"
+	"app_timer.h"
+	"app_button.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\bsp\bsp_config.h
+	<stdint.h>
+	<stdbool.h>
+	"boards.h"
+	"app_button.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\button\app_button.c
+	"sdk_common.h"
+	"app_button.h"
+	"app_timer.h"
+	"app_error.h"
+	"nrf_drv_gpiote.h"
+	"nrf_assert.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\button\app_button.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"app_error.h"
+	"nrf_gpio.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\gpiote\nrf_drv_gpiote.h
+	"nrf_gpiote.h"
+	"nrf_gpio.h"
+	"sdk_errors.h"
+	<stdint.h>
+	<stdbool.h>
+	"sdk_config.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\fifo\app_fifo.c
+	"sdk_common.h"
+	"app_fifo.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\fifo\app_fifo.h
+	<stdint.h>
+	<stdlib.h>
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\fstorage\fstorage.c
+	"sdk_common.h"
+	"fstorage.h"
+	"fstorage_internal_defs.h"
+	<stdint.h>
+	<string.h>
+	<stdbool.h>
+	"nrf_error.h"
+	"nrf_soc.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\fstorage\fstorage.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf_section.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\fstorage\fstorage_internal_defs.h
+	"nrf.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\hardfault\hardfault_implementation.c
+	"sdk_common.h"
+	"hardfault.h"
+	"nrf.h"
+	"compiler_abstraction.h"
+	"app_util_platform.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\hardfault\hardfault.h
+	<stdint.h>
+	<stddef.h>
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\hardfault\nrf52\handler\hardfault_handler_gcc.c
+	"sdk_common.h"
+	<stdint.h>
+	"compiler_abstraction.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\src\nrf_log_backend_serial.c
+	"sdk_common.h"
+	"nrf_log_backend.h"
+	"nrf_error.h"
+	<stdarg.h>
+	<string.h>
+	<stdio.h>
+	<ctype.h>
+	<SEGGER_RTT_Conf.h>
+	<SEGGER_RTT.h>
+	"nrf_drv_uart.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\nrf_log_backend.h
+	"nrf_log_ctrl.h"
+	"sdk_errors.h"
+	<stdbool.h>
+
+1489147648 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\external\segger_rtt\segger_rtt_conf.h
+	"sdk_config.h"
+	"compiler_abstraction.h"
+	"app_util_platform.h"
+	<intrinsics.h>
+
+1489147648 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\external\segger_rtt\segger_rtt.h
+	"SEGGER_RTT_Conf.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\uart\nrf_drv_uart.h
+	"nrf_uart.h"
+	"nrf_uarte.h"
+	"sdk_errors.h"
+	"sdk_config.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\src\nrf_log_frontend.c
+	"sdk_common.h"
+	"app_util.h"
+	"app_util_platform.h"
+	"nrf_log.h"
+	"nrf_log_internal.h"
+	"nrf_log_backend.h"
+	"nrf_log_ctrl.h"
+	<string.h>
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\src\nrf_log_internal.h
+	"sdk_common.h"
+	"nrf.h"
+	"nrf_error.h"
+	"app_util.h"
+	<stdint.h>
+	<stdbool.h>
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\scheduler\app_scheduler.c
+	"sdk_common.h"
+	"app_scheduler.h"
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	"nrf_soc.h"
+	"nrf_assert.h"
+	"app_util_platform.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\scheduler\app_scheduler.h
+	"sdk_config.h"
+	<stdint.h>
+	"app_error.h"
+	"app_util.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\timer\app_timer.c
+	"sdk_common.h"
+	"app_timer.h"
+	<stdlib.h>
+	"nrf.h"
+	"nrf_soc.h"
+	"app_error.h"
+	"nrf_delay.h"
+	"app_util_platform.h"
+	"app_scheduler.h"
+
+1492619926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\timer\app_timer.h
+	"sdk_config.h"
+	"app_error.h"
+	"app_util.h"
+	"compiler_abstraction.h"
+	<stdint.h>
+	<stdbool.h>
+	<stdio.h>
+	"FreeRTOSConfig.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\scheduler\app_scheduler.h
+	"sdk_config.h"
+	<stdint.h>
+	"app_error.h"
+	"app_util.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\uart\app_uart_fifo.c
+	"sdk_common.h"
+	"app_uart.h"
+	"app_fifo.h"
+	"nrf_drv_uart.h"
+	"nrf_assert.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\uart\app_uart.h
+	<stdint.h>
+	<stdbool.h>
+	"app_util_platform.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\fifo\app_fifo.h
+	<stdint.h>
+	<stdlib.h>
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\uart\retarget.c
+	"sdk_common.h"
+	<stdio.h>
+	<stdint.h>
+	"app_uart.h"
+	"nrf_error.h"
+
+1494793756 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_error.c
+	"nrf.h"
+	<stdio.h>
+	"app_error.h"
+	"nordic_common.h"
+	"sdk_errors.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_error.h
+	<stdint.h>
+	<stdio.h>
+	<stdbool.h>
+	"nrf.h"
+	"sdk_errors.h"
+	"nordic_common.h"
+	"app_error_weak.h"
+	"ant_error.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_error_weak.h
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_error_weak.c
+	"app_error.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_util_platform.c
+	"app_util_platform.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_util_platform.h
+	<stdint.h>
+	"compiler_abstraction.h"
+	"nrf.h"
+	"nrf_soc.h"
+	"nrf_nvic.h"
+	"nrf_assert.h"
+	"app_error.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\nrf_assert.h
+	<stdint.h>
+	"nrf.h"
+	"app_error.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\nrf_assert.c
+	"nrf_assert.h"
+	"app_error.h"
+	"nordic_common.h"
+
+1489150927 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\ble_serialization.c
+	"ble_serialization.h"
+	"nrf_error.h"
+	"app_util.h"
+	<stddef.h>
+	<string.h>
+
+1489150927 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\ble_serialization.h
+	"nordic_common.h"
+	"nrf_error.h"
+	<stdint.h>
+	<stddef.h>
+	"cond_field_serialization.h"
+
+1489150927 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\cond_field_serialization.h
+	<stdint.h>
+
+1489150927 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\cond_field_serialization.c
+	"nrf_error.h"
+	"cond_field_serialization.h"
+	"ble_serialization.h"
+	<stddef.h>
+
+1489150927 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\ser_dbg_sd_str.c
+	"ser_dbg_sd_str.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	<string.h>
+	"sdk_common.h"
+	"ble_ranges.h"
+	"ant_interface.h"
+	"ant_parameters.h"
+
+1489150927 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\ser_dbg_sd_str.h
+	<stdint.h>
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\twi_master\nrf_drv_twi.h
+	"nordic_common.h"
+	"sdk_config.h"
+	"nrf_twi.h"
+	"nrf_twim.h"
+	"sdk_errors.h"
+
+1490803820 d:\ejs shmc\tech\projects\source\open\adxl345.h
+	"stdint.h"
+	"stdbool.h"
+	"nrf_drv_common.h"
+	"nrf_drv_twi.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\systick\nrf_drv_systick.h
+	<stdint.h>
+	<stdbool.h>
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\uart\app_uart.h
+	<stdint.h>
+	<stdbool.h>
+	"app_util_platform.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_advertising\ble_advertising.h
+	<stdint.h>
+	"nrf_error.h"
+	"ble.h"
+	"ble_gattc.h"
+	"ble_advdata.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_conn_params.h
+	<stdint.h>
+	"ble.h"
+	"ble_srv_common.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_services\ble_nus\ble_nus.h
+	"sdk_config.h"
+	"ble_stack_handler_types.h"
+	"ble.h"
+	"ble_srv_common.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\bsp\bsp_btn_ble.h
+	<stdint.h>
+	"ble.h"
+	"bsp.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\bsp\bsp.h
+	<stdint.h>
+	<stdbool.h>
+	"boards.h"
+	"app_button.h"
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\transport\ser_hal_transport.h
+	<stdint.h>
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\connectivity\ser_conn_handlers.h
+	<stdint.h>
+	"nordic_common.h"
+	"app_util.h"
+	"ble_stack_handler_types.h"
+	"ant_stack_handler_types.h"
+	"softdevice_handler.h"
+	"ser_hal_transport.h"
+	"ble.h"
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\transport\ser_phy_debug_comm.h
+	<stdint.h>
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\nrf_ble_gatt\nrf_ble_gatt.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	"ble.h"
+	"app_util.h"
+	"sdk_errors.h"
+	"sdk_config.h"
+
+1489150927 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\connectivity\codecs\common\ble_dtm_init.c
+	"ble_dtm_conn.h"
+	"dtm_uart.h"
+	"nrf_error.h"
+	"ble_serialization.h"
+
+1489150927 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\connectivity\codecs\common\ble_dtm_conn.h
+	"dtm_uart.h"
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\connectivity\hal\dtm_uart.h
+	<stdint.h>
+	"dtm_uart_params.h"
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\transport\dtm_uart_params.h
+	<stdbool.h>
+	<stdint.h>
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\ble_serialization.h
+	"nordic_common.h"
+	"nrf_error.h"
+	<stdint.h>
+	<stddef.h>
+	"cond_field_serialization.h"
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\cond_field_serialization.h
+	<stdint.h>
+
+1489150927 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\transport\ser_phy\ser_phy_uart.c
+	"ser_phy.h"
+	"ser_config.h"
+	"ser_phy_config_conn.h"
+	"ser_phy_config_app.h"
+	"nrf_drv_uart.h"
+	"app_error.h"
+	"app_util.h"
+	"app_util_platform.h"
+
+1489150927 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\transport\ser_phy\ser_phy.h
+	<stdint.h>
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\ser_config.h
+	<stdint.h>
+	"nrf.h"
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\transport\ser_phy\config\ser_phy_config_conn.h
+	"boards.h"
+	"ser_config.h"
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\transport\ser_phy\config\ser_phy_config_app.h
+	"boards.h"
+	"ser_config.h"
+
+1489150927 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\connectivity\hal\dtm_uart.c
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"ble_dtm.h"
+	"nrf_gpio.h"
+	"dtm_uart.h"
+	"nrf_error.h"
+	"app_util.h"
+	"nrf_drv_uart.h"
+	"app_util_platform.h"
+
+1489150925 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_dtm\ble_dtm.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+
+1489150927 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\connectivity\hal\dtm_uart.h
+	<stdint.h>
+	"dtm_uart_params.h"
+
+1489150927 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\transport\ser_hal_transport.c
+	<stdbool.h>
+	<string.h>
+	"app_error.h"
+	"ser_config.h"
+	"ser_phy.h"
+	"ser_hal_transport.h"
+
+1489150927 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\transport\ser_phy\ser_phy.h
+	<stdint.h>
+
+1489150927 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\transport\ser_hal_transport.h
+	<stdint.h>
+
+1489150925 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\nrf_ble_gatt\nrf_ble_gatt.c
+	"sdk_config.h"
+	"nrf_ble_gatt.h"
+	"ble_srv_common.h"
+	"sdk_common.h"
+	"app_error.h"
+	"sdk_macros.h"
+	"nrf_log.h"
+
+1489150925 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\nrf_ble_gatt\nrf_ble_gatt.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	"ble.h"
+	"app_util.h"
+	"sdk_errors.h"
+	"sdk_config.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\strerror\nrf_strerror.c
+	"sdk_common.h"
+	"nrf_strerror.h"
+
+1494018414 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\strerror\nrf_strerror.h
+	"sdk_errors.h"
+
+1493896946 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\common\softdevice_handler\softdevice_handler.c
+	"softdevice_handler.h"
+	<stdlib.h>
+	<stdint.h>
+	<stdio.h>
+	<string.h>
+	"nrf.h"
+	"nrf_assert.h"
+	"nrf_soc.h"
+	"nrf_nvic.h"
+	"sdk_common.h"
+	"nrf_drv_clock.h"
+	"nrf_drv_power.h"
+	"app_error.h"
+	"nrf_drv_rng.h"
+	"nrf_log.h"
+	"ant_interface.h"
+	"ant_interface.h"
+	"ble.h"
+
+1489150927 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\common\softdevice_handler\softdevice_handler.h
+	<stdlib.h>
+	"nordic_common.h"
+	"nrf_sdm.h"
+	"app_error.h"
+	"app_util.h"
+	"ble_stack_handler_types.h"
+	"ant_stack_handler_types.h"
+	"ble.h"
+
+1489150927 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h
+	<stdlib.h>
+	"ble.h"
+	"nrf_sdm.h"
+	"app_error.h"
+	"app_util.h"
+	"sdk_config.h"
+
+1489150927 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h
+	<stdlib.h>
+	<stdint.h>
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\rng\nrf_drv_rng.h
+	<stdbool.h>
+	<stdint.h>
+	"nrf_rng.h"
+	"sdk_errors.h"
+	"sdk_config.h"
+	"nrf_drv_common.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_rng.h
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+	"nrf.h"
+
+1492627708 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\gcc\gcc_startup_nrf52.s
+	"startup_config.h"
+
+1492640425 d:\ejs shmc\tech\projects\nrf52\inc\startup_config.h
+
+1489147681 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\system_nrf52.c
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"system_nrf52.h"
+
+1489147648 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\external\segger_rtt\rtt_syscalls_gcc.c
+	<stdlib.h>
+	"SEGGER_RTT.h"
+
+1489147648 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\external\segger_rtt\segger_rtt.h
+	"SEGGER_RTT_Conf.h"
+
+1489147648 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\external\segger_rtt\segger_rtt_conf.h
+	"sdk_config.h"
+	"compiler_abstraction.h"
+	"app_util_platform.h"
+	<intrinsics.h>
+
+1489147648 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\external\segger_rtt\segger_rtt.c
+	"SEGGER_RTT.h"
+	<string.h>
+
+1489147648 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\external\segger_rtt\segger_rtt_printf.c
+	"SEGGER_RTT.h"
+	"SEGGER_RTT_Conf.h"
+	<stdlib.h>
+	<stdarg.h>
+
+1490806330 source:d:\ejs shmc\tech\projects\source\open\adxl345.c
+	"ADXL345.h"
+
+1494019925 source:d:\ejs shmc\tech\projects\source\open\adxl345_port_nrf52.c
+	<string.h>
+	<stdbool.h>
+	"ADXL345.h"
+	"sdk_config.h"
+	"nrf_drv_twi.h"
+
+1497369379 d:\ejs shmc\tech\projects\source\open\mma8453.h
+	"stdint.h"
+	"stdbool.h"
+	"nrf_drv_common.h"
+	"nrf_drv_twi.h"
+
+1497388353 source:d:\ejs shmc\tech\projects\source\open\mma8453.c
+	"MMA8453.h"
+	"nrf_log.h"
+
+1497389106 source:d:\ejs shmc\tech\projects\source\open\mma8453_port_nrf52.c
+	<string.h>
+	<stdbool.h>
+	"MMA8453.h"
+	"pecpec_nrf52.h"
+	"sdk_config.h"
+	"nrf_drv_twi.h"
+
+1497306153 source:d:\ejs shmc\tech\projects\nrf52\src\app_ble.c
+	<stdbool.h>
+	<stdint.h>
+	<stdio.h>
+	"nordic_common.h"
+	"nrf_sdm.h"
+	"nrf_soc.h"
+	"nrf.h"
+	"app_timer.h"
+	"ble_hci.h"
+	"ble_advdata.h"
+	"ble_advertising.h"
+	"ble_conn_params.h"
+	"ble_nus.h"
+	"printf.h"
+	"app_scheduler.h"
+	"softdevice_handler.h"
+	"nrf_ble_gatt.h"
+	"nrf_log.h"
+	"pecpec_nrf52.h"
+	<string.h>
+
+1497272255 d:\ejs shmc\tech\projects\nrf52\inc\nrf52_port.h
+	"MMA8453.h"
+	"nrf_gpio.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\gpiote\app_gpiote.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"app_error.h"
+	"app_util.h"
+
+1497261508 d:\ejs shmc\tech\projects\nrf52\inc\app_ble.h
+	"app_error.h"
+
+1497272245 source:d:\ejs shmc\tech\projects\nrf52\src\nrf52_port.c
+	<stdbool.h>
+	<stdint.h>
+	<stdio.h>
+	"nrf52_port.h"
+	"nrf_soc.h"
+	"ble_nus.h"
+	"app_util_platform.h"
+	"app_error.h"
+	"app_timer.h"
+	"nrf_drv_gpiote.h"
+	"nrf_drv_twi.h"
+	"MMA8453.h"
+	"ser_phy_debug_comm.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+	"app_ble.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\gpiote\app_gpiote.c
+	"sdk_common.h"
+	"app_gpiote.h"
+	"nrf_drv_gpiote.h"
+	"nrf_bitmask.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\gpiote\app_gpiote.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"app_error.h"
+	"app_util.h"
+
+1497430604 d:\ejs shmc\tech\projects\nrf52\inc\pecpec_nrf52.h
+	"MMA8453.h"
+	"nrf_gpio.h"
+
+1497430943 source:d:\ejs shmc\tech\projects\nrf52\src\pecpec_nrf52.c
+	<stdbool.h>
+	<stdint.h>
+	<stdio.h>
+	"pecpec_nrf52.h"
+	"nrf_soc.h"
+	"ble_nus.h"
+	"app_util_platform.h"
+	"app_error.h"
+	"app_timer.h"
+	"nrf_drv_gpiote.h"
+	"nrf_drv_twi.h"
+	"MMA8453.h"
+	"ser_phy_debug_comm.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+	"pecpec_ble.h"
+
+1497307255 source:d:\ejs shmc\tech\projects\nrf52\src\pecpec_ble.c
+	<stdbool.h>
+	<stdint.h>
+	<stdio.h>
+	"nordic_common.h"
+	"nrf_sdm.h"
+	"nrf_soc.h"
+	"nrf.h"
+	"app_timer.h"
+	"ble_hci.h"
+	"ble_advdata.h"
+	"ble_advertising.h"
+	"ble_conn_params.h"
+	"ble_nus.h"
+	"printf.h"
+	"app_scheduler.h"
+	"softdevice_handler.h"
+	"nrf_ble_gatt.h"
+	"nrf_log.h"
+	"pecpec_nrf52.h"
+	<string.h>
+
+1497261508 d:\ejs shmc\tech\projects\nrf52\inc\pecpec_ble.h
+	"app_error.h"
+
+1489150926 source:d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\twi\app_twi.c
+	"sdk_common.h"
+	"app_twi.h"
+	"nrf_assert.h"
+	"app_util_platform.h"
+
+1489150926 d:\ejs shmc\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\twi\app_twi.h
+	<stdint.h>
+	"nrf_drv_twi.h"
+	"sdk_errors.h"
+	"nrf_queue.h"
+
+1489150926 d:\ejsshm~2\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\queue\nrf_queue.h
+	<stdint.h>
+	<stdint.h>
+	<string.h>
+	"nrf_assert.h"
+	"sdk_errors.h"
+	"app_util.h"
+	"app_util_platform.h"
+
+1497427561 source:c:\users\servisas\ejs_cloud\tech\projects\nrf52\src\main.c
+	<stdbool.h>
+	<stdint.h>
+	<stdio.h>
+	"nordic_common.h"
+	"nrf_sdm.h"
+	"nrf_soc.h"
+	"nrf_drv_systick.h"
+	"app_error.h"
+	"nrf.h"
+	"app_timer.h"
+	"app_gpiote.h"
+	"ble_nus.h"
+	"printf.h"
+	"SEGGER_RTT.h"
+	"MMA8453.h"
+	"app_scheduler.h"
+	"ser_hal_transport.h"
+	"ser_conn_handlers.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+	"pecpec_nrf52.h"
+	"pecpec_ble.h"
+	<string.h>
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\nordic_common.h
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_sdm.h
+	"nrf_svc.h"
+	"nrf.h"
+	"nrf_soc.h"
+	"nrf_error_sdm.h"
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_svc.h
+	"stdint.h"
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf.h
+	"nrf51.h"
+	"nrf51_bitfields.h"
+	"nrf51_deprecated.h"
+	"nrf52840.h"
+	"nrf52840_bitfields.h"
+	"nrf51_to_nrf52840.h"
+	"nrf52_to_nrf52840.h"
+	"nrf52.h"
+	"nrf52_bitfields.h"
+	"nrf51_to_nrf52.h"
+	"nrf52_name_change.h"
+	"compiler_abstraction.h"
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51.h
+	"core_cm0.h"
+	"system_nrf51.h"
+
+1489147646 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\core_cm0.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+
+1489147646 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\core_cminstr.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1489147646 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\cmsis_armcc.h
+
+1489147646 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\cmsis_armcc_v6.h
+
+1489147646 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\cmsis_gcc.h
+
+1489147646 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\core_cmfunc.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\system_nrf51.h
+	<stdint.h>
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51_bitfields.h
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51_deprecated.h
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52840.h
+	"core_cm4.h"
+	"system_nrf52840.h"
+
+1489147646 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\core_cm4.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cmFunc.h"
+	"core_cmSimd.h"
+
+1489147646 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\cmsis\include\core_cmsimd.h
+	"cmsis_armcc.h"
+	"cmsis_armcc_V6.h"
+	"cmsis_gcc.h"
+	<cmsis_iar.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\system_nrf52840.h
+	<stdint.h>
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52840_bitfields.h
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51_to_nrf52840.h
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52_to_nrf52840.h
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52.h
+	"core_cm4.h"
+	"system_nrf52.h"
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\system_nrf52.h
+	<stdint.h>
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52_bitfields.h
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51_to_nrf52.h
+
+1489147682 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52_name_change.h
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\compiler_abstraction.h
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_soc.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf_svc.h"
+	"nrf.h"
+	"nrf_error_soc.h"
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_error_soc.h
+	"nrf_error.h"
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_error.h
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_error_sdm.h
+	"nrf_error.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\systick\nrf_drv_systick.h
+	<stdint.h>
+	<stdbool.h>
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_error.h
+	<stdint.h>
+	<stdio.h>
+	<stdbool.h>
+	"nrf.h"
+	"sdk_errors.h"
+	"nordic_common.h"
+	"app_error_weak.h"
+	"ant_error.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\sdk_errors.h
+	<stdint.h>
+	"nrf_error.h"
+	"sdk_config.h"
+
+1497269475 c:\users\servisas\ejs_cloud\tech\projects\nrf52\inc\sdk_config.h
+	"app_config.h"
+
+1497261891 c:\users\servisas\ejs_cloud\tech\projects\nrf52\inc\app_config.h
+	<stdint.h>
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_error_weak.h
+
+1492619926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\timer\app_timer.h
+	"sdk_config.h"
+	"app_error.h"
+	"app_util.h"
+	"compiler_abstraction.h"
+	<stdint.h>
+	<stdbool.h>
+	<stdio.h>
+	"FreeRTOSConfig.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_util.h
+	<stdint.h>
+	<stdbool.h>
+	"compiler_abstraction.h"
+	"nordic_common.h"
+	"nrf.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\gpiote\app_gpiote.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"app_error.h"
+	"app_util.h"
+
+1489150925 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_services\ble_nus\ble_nus.h
+	"sdk_config.h"
+	"ble_stack_handler_types.h"
+	"ble.h"
+	"ble_srv_common.h"
+
+1489150927 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\common\softdevice_handler\ble_stack_handler_types.h
+	<stdlib.h>
+	"ble.h"
+	"nrf_sdm.h"
+	"app_error.h"
+	"app_util.h"
+	"sdk_config.h"
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble.h
+	"ble_ranges.h"
+	"ble_types.h"
+	"ble_gap.h"
+	"ble_l2cap.h"
+	"ble_gatt.h"
+	"ble_gattc.h"
+	"ble_gatts.h"
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_ranges.h
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_types.h
+	<stdint.h>
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_gap.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"nrf_svc.h"
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_l2cap.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"ble_err.h"
+	"nrf_svc.h"
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_err.h
+	"nrf_error.h"
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_gatt.h
+	"ble_types.h"
+	"ble_ranges.h"
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_gattc.h
+	"ble_gatt.h"
+	"ble_types.h"
+	"ble_ranges.h"
+	"nrf_svc.h"
+	"nrf_error.h"
+	"nrf.h"
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_gatts.h
+	"ble_types.h"
+	"ble_ranges.h"
+	"ble_l2cap.h"
+	"ble_gap.h"
+	"ble_gatt.h"
+	"nrf_svc.h"
+
+1489150925 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_srv_common.h
+	<stdint.h>
+	<stdbool.h>
+	"ble_types.h"
+	"app_util.h"
+	"ble.h"
+	"ble_gap.h"
+	"ble_gatt.h"
+
+1453840109 c:\users\servisas\ejs_cloud\tech\projects\source\open\printf.h
+	<stdarg.h>
+
+1489147648 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\external\segger_rtt\segger_rtt.h
+	"SEGGER_RTT_Conf.h"
+
+1489147648 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\external\segger_rtt\segger_rtt_conf.h
+	"sdk_config.h"
+	"compiler_abstraction.h"
+	"app_util_platform.h"
+	<intrinsics.h>
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_util_platform.h
+	<stdint.h>
+	"compiler_abstraction.h"
+	"nrf.h"
+	"nrf_soc.h"
+	"nrf_nvic.h"
+	"nrf_assert.h"
+	"app_error.h"
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\nrf_nvic.h
+	<stdint.h>
+	"nrf.h"
+	"nrf_error_soc.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\nrf_assert.h
+	<stdint.h>
+	"nrf.h"
+	"app_error.h"
+
+1497369379 c:\users\servisas\ejs_cloud\tech\projects\source\open\mma8453.h
+	"stdint.h"
+	"stdbool.h"
+	"nrf_drv_common.h"
+	"nrf_drv_twi.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\common\nrf_drv_common.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"sdk_errors.h"
+	"sdk_common.h"
+	"nrf_assert.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\sdk_common.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	"sdk_config.h"
+	"nordic_common.h"
+	"compiler_abstraction.h"
+	"sdk_os.h"
+	"sdk_errors.h"
+	"app_util.h"
+	"sdk_macros.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\sdk_os.h
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\sdk_macros.h
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\twi_master\nrf_drv_twi.h
+	"nordic_common.h"
+	"sdk_config.h"
+	"nrf_twi.h"
+	"nrf_twim.h"
+	"sdk_errors.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_twi.h
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+	"nrf_peripherals.h"
+	"nrf.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_peripherals.h
+	"nrf51422_peripherals.h"
+	"nrf51802_peripherals.h"
+	"nrf51822_peripherals.h"
+	"nrf52832_peripherals.h"
+	"nrf52840_peripherals.h"
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51422_peripherals.h
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51802_peripherals.h
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf51822_peripherals.h
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52832_peripherals.h
+
+1489147681 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\device\\nrf52840_peripherals.h
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_twim.h
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+	"nrf.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\scheduler\app_scheduler.h
+	"sdk_config.h"
+	<stdint.h>
+	"app_error.h"
+	"app_util.h"
+
+1489150927 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\transport\ser_hal_transport.h
+	<stdint.h>
+
+1489150927 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\connectivity\ser_conn_handlers.h
+	<stdint.h>
+	"nordic_common.h"
+	"app_util.h"
+	"ble_stack_handler_types.h"
+	"ant_stack_handler_types.h"
+	"softdevice_handler.h"
+	"ser_hal_transport.h"
+	"ble.h"
+
+1489150927 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\common\softdevice_handler\ant_stack_handler_types.h
+	<stdlib.h>
+	<stdint.h>
+
+1489150927 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\common\softdevice_handler\softdevice_handler.h
+	<stdlib.h>
+	"nordic_common.h"
+	"nrf_sdm.h"
+	"app_error.h"
+	"app_util.h"
+	"ble_stack_handler_types.h"
+	"ant_stack_handler_types.h"
+	"ble.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\nrf_log.h
+	"sdk_common.h"
+	"nrf_strerror.h"
+	"nrf_log_internal.h"
+
+1494018414 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\strerror\nrf_strerror.h
+	"sdk_errors.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\src\nrf_log_internal.h
+	"sdk_common.h"
+	"nrf.h"
+	"nrf_error.h"
+	"app_util.h"
+	<stdint.h>
+	<stdbool.h>
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\nrf_log_ctrl.h
+	"sdk_config.h"
+	"sdk_errors.h"
+	<stdint.h>
+	<stdbool.h>
+	"nrf_log_ctrl_internal.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\src\nrf_log_ctrl_internal.h
+	"sdk_common.h"
+	"app_util_platform.h"
+
+1497430604 c:\users\servisas\ejs_cloud\tech\projects\nrf52\inc\pecpec_nrf52.h
+	"MMA8453.h"
+	"nrf_gpio.h"
+
+1497259369 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_gpio.h
+	"nrf.h"
+	"nrf_peripherals.h"
+	"nrf_assert.h"
+	<stdbool.h>
+	<stdlib.h>
+
+1497261508 c:\users\servisas\ejs_cloud\tech\projects\nrf52\inc\pecpec_ble.h
+	"app_error.h"
+
+1497307255 source:c:\users\servisas\ejs_cloud\tech\projects\nrf52\src\pecpec_ble.c
+	<stdbool.h>
+	<stdint.h>
+	<stdio.h>
+	"nordic_common.h"
+	"nrf_sdm.h"
+	"nrf_soc.h"
+	"nrf.h"
+	"app_timer.h"
+	"ble_hci.h"
+	"ble_advdata.h"
+	"ble_advertising.h"
+	"ble_conn_params.h"
+	"ble_nus.h"
+	"printf.h"
+	"app_scheduler.h"
+	"softdevice_handler.h"
+	"nrf_ble_gatt.h"
+	"nrf_log.h"
+	"pecpec_nrf52.h"
+	<string.h>
+
+1488792935 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\s132\headers\ble_hci.h
+
+1489150925 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_advdata.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	"ble.h"
+	"app_util.h"
+
+1489150925 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_advertising\ble_advertising.h
+	<stdint.h>
+	"nrf_error.h"
+	"ble.h"
+	"ble_gattc.h"
+	"ble_advdata.h"
+
+1489150925 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_conn_params.h
+	<stdint.h>
+	"ble.h"
+	"ble_srv_common.h"
+
+1489150925 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\nrf_ble_gatt\nrf_ble_gatt.h
+	<stdint.h>
+	<stdbool.h>
+	<string.h>
+	"ble.h"
+	"app_util.h"
+	"sdk_errors.h"
+	"sdk_config.h"
+
+1497430943 source:c:\users\servisas\ejs_cloud\tech\projects\nrf52\src\pecpec_nrf52.c
+	<stdbool.h>
+	<stdint.h>
+	<stdio.h>
+	"pecpec_nrf52.h"
+	"nrf_soc.h"
+	"ble_nus.h"
+	"app_util_platform.h"
+	"app_error.h"
+	"app_timer.h"
+	"nrf_drv_gpiote.h"
+	"nrf_drv_twi.h"
+	"MMA8453.h"
+	"ser_phy_debug_comm.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+	"pecpec_ble.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\gpiote\nrf_drv_gpiote.h
+	"nrf_gpiote.h"
+	"nrf_gpio.h"
+	"sdk_errors.h"
+	<stdint.h>
+	<stdbool.h>
+	"sdk_config.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_gpiote.h
+	"nrf_peripherals.h"
+	"nrf.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1489150927 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\serialization\common\transport\ser_phy_debug_comm.h
+	<stdint.h>
+
+1493939752 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_advertising\ble_advertising.c
+	"sdk_common.h"
+	"ble_advdata.h"
+	"ble_advertising.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	"fstorage.h"
+	"sdk_errors.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\fstorage\fstorage.h
+	<stdint.h>
+	<stdbool.h>
+	"nrf_section.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\experimental_section_vars\nrf_section.h
+	"nordic_common.h"
+
+1489150925 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\ble_services\ble_nus\ble_nus.c
+	"sdk_common.h"
+	"ble_nus.h"
+	"ble_srv_common.h"
+	"ble.h"
+	"nrf_log.h"
+
+1489150925 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_advdata.c
+	"ble_advdata.h"
+	"ble_gap.h"
+	"ble_srv_common.h"
+	"sdk_common.h"
+
+1489150925 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_conn_params.c
+	"ble_conn_params.h"
+	<stdlib.h>
+	"nordic_common.h"
+	"ble_hci.h"
+	"app_timer.h"
+	"ble_srv_common.h"
+	"app_util.h"
+
+1489150925 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\common\ble_srv_common.c
+	"ble_srv_common.h"
+	<string.h>
+	"nordic_common.h"
+	"app_error.h"
+	"ble.h"
+
+1489150925 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\ble\nrf_ble_gatt\nrf_ble_gatt.c
+	"sdk_config.h"
+	"nrf_ble_gatt.h"
+	"ble_srv_common.h"
+	"sdk_common.h"
+	"app_error.h"
+	"sdk_macros.h"
+	"nrf_log.h"
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\clock\nrf_drv_clock.c
+	"sdk_common.h"
+	"nrf_drv_clock.h"
+	"nrf_error.h"
+	"app_util_platform.h"
+	"softdevice_handler.h"
+	"nrf_sdm.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\clock\nrf_drv_clock.h
+	<stdbool.h>
+	<stdint.h>
+	"sdk_errors.h"
+	"nrf_assert.h"
+	"nrf_clock.h"
+	"sdk_config.h"
+	"nrf_drv_common.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_clock.h
+	<stddef.h>
+	<stdbool.h>
+	"nrf.h"
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\common\nrf_drv_common.c
+	<stddef.h>
+	"nrf_drv_common.h"
+	"nrf_assert.h"
+	"app_util_platform.h"
+	"nrf_peripherals.h"
+	"nrf_drv_power.h"
+	"nrf_drv_clock.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\power\nrf_drv_power.h
+	<stdbool.h>
+	<stdint.h>
+	"nrf_power.h"
+	"sdk_config.h"
+	"nrf_drv_common.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_power.h
+	"nrf.h"
+	"sdk_config.h"
+	"nordic_common.h"
+	"nrf_assert.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\gpiote\nrf_drv_gpiote.c
+	"sdk_common.h"
+	"nrf_drv_gpiote.h"
+	"nrf_drv_common.h"
+	"app_util_platform.h"
+	"nrf_assert.h"
+	"nrf_bitmask.h"
+	<string.h>
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\nrf_bitmask.h
+	"compiler_abstraction.h"
+	<stdint.h>
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\systick\nrf_drv_systick.c
+	"sdk_common.h"
+	"nrf_drv_systick.h"
+	"nrf_systick.h"
+	"nrf.h"
+	"nrf_assert.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_systick.h
+	"nrf.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1497388451 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\twi_master\nrf_drv_twi.c
+	"sdk_common.h"
+	"nrf_drv_twi.h"
+	"nrf_drv_common.h"
+	"nrf_gpio.h"
+	"nrf_assert.h"
+	"app_util_platform.h"
+	"nrf_delay.h"
+	<stdio.h>
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\delay\nrf_delay.h
+	"nrf.h"
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\uart\nrf_drv_uart.c
+	"sdk_common.h"
+	"nrf_drv_uart.h"
+	"nrf_assert.h"
+	"nrf_drv_common.h"
+	"nrf_gpio.h"
+	"app_util_platform.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\uart\nrf_drv_uart.h
+	"nrf_uart.h"
+	"nrf_uarte.h"
+	"sdk_errors.h"
+	"sdk_config.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_uart.h
+	"nrf.h"
+	"nrf_peripherals.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_uarte.h
+	"nrf.h"
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\fifo\app_fifo.c
+	"sdk_common.h"
+	"app_fifo.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\fifo\app_fifo.h
+	<stdint.h>
+	<stdlib.h>
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\fstorage\fstorage.c
+	"sdk_common.h"
+	"fstorage.h"
+	"fstorage_internal_defs.h"
+	<stdint.h>
+	<string.h>
+	<stdbool.h>
+	"nrf_error.h"
+	"nrf_soc.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\fstorage\fstorage_internal_defs.h
+	"nrf.h"
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\gpiote\app_gpiote.c
+	"sdk_common.h"
+	"app_gpiote.h"
+	"nrf_drv_gpiote.h"
+	"nrf_bitmask.h"
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\hardfault\hardfault_implementation.c
+	"sdk_common.h"
+	"hardfault.h"
+	"nrf.h"
+	"compiler_abstraction.h"
+	"app_util_platform.h"
+	"nrf_soc.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\hardfault\hardfault.h
+	<stdint.h>
+	<stddef.h>
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\hardfault\nrf52\handler\hardfault_handler_gcc.c
+	"sdk_common.h"
+	<stdint.h>
+	"compiler_abstraction.h"
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\src\nrf_log_backend_serial.c
+	"sdk_common.h"
+	"nrf_log_backend.h"
+	"nrf_error.h"
+	<stdarg.h>
+	<string.h>
+	<stdio.h>
+	<ctype.h>
+	<SEGGER_RTT_Conf.h>
+	<SEGGER_RTT.h>
+	"nrf_drv_uart.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\nrf_log_backend.h
+	"nrf_log_ctrl.h"
+	"sdk_errors.h"
+	<stdbool.h>
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\log\src\nrf_log_frontend.c
+	"sdk_common.h"
+	"app_util.h"
+	"app_util_platform.h"
+	"nrf_log.h"
+	"nrf_log_internal.h"
+	"nrf_log_backend.h"
+	"nrf_log_ctrl.h"
+	<string.h>
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\scheduler\app_scheduler.c
+	"sdk_common.h"
+	"app_scheduler.h"
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	"nrf_soc.h"
+	"nrf_assert.h"
+	"app_util_platform.h"
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\strerror\nrf_strerror.c
+	"sdk_common.h"
+	"nrf_strerror.h"
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\timer\app_timer.c
+	"sdk_common.h"
+	"app_timer.h"
+	<stdlib.h>
+	"nrf.h"
+	"nrf_soc.h"
+	"app_error.h"
+	"nrf_delay.h"
+	"app_util_platform.h"
+	"app_scheduler.h"
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\uart\app_uart_fifo.c
+	"sdk_common.h"
+	"app_uart.h"
+	"app_fifo.h"
+	"nrf_drv_uart.h"
+	"nrf_assert.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\uart\app_uart.h
+	<stdint.h>
+	<stdbool.h>
+	"app_util_platform.h"
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\uart\retarget.c
+	"sdk_common.h"
+	<stdio.h>
+	<stdint.h>
+	"app_uart.h"
+	"nrf_error.h"
+
+1494793756 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_error.c
+	"nrf.h"
+	<stdio.h>
+	"app_error.h"
+	"nordic_common.h"
+	"sdk_errors.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_error_weak.c
+	"app_error.h"
+	"nrf_log.h"
+	"nrf_log_ctrl.h"
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\app_util_platform.c
+	"app_util_platform.h"
+
+1489150926 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\libraries\util\nrf_assert.c
+	"nrf_assert.h"
+	"app_error.h"
+	"nordic_common.h"
+
+1493896946 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\softdevice\common\softdevice_handler\softdevice_handler.c
+	"softdevice_handler.h"
+	<stdlib.h>
+	<stdint.h>
+	<stdio.h>
+	<string.h>
+	"nrf.h"
+	"nrf_assert.h"
+	"nrf_soc.h"
+	"nrf_nvic.h"
+	"sdk_common.h"
+	"nrf_drv_clock.h"
+	"nrf_drv_power.h"
+	"app_error.h"
+	"nrf_drv_rng.h"
+	"nrf_log.h"
+	"ant_interface.h"
+	"ant_interface.h"
+	"ble.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\rng\nrf_drv_rng.h
+	<stdbool.h>
+	<stdint.h>
+	"nrf_rng.h"
+	"sdk_errors.h"
+	"sdk_config.h"
+	"nrf_drv_common.h"
+
+1489150926 c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\drivers_nrf\hal\nrf_rng.h
+	<stdint.h>
+	<stddef.h>
+	<stdbool.h>
+	"nrf.h"
+
+1492627708 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\gcc\gcc_startup_nrf52.s
+	"startup_config.h"
+
+1492640425 c:\users\servisas\ejs_cloud\tech\projects\nrf52\inc\startup_config.h
+
+1489147681 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\components\toolchain\system_nrf52.c
+	<stdint.h>
+	<stdbool.h>
+	"nrf.h"
+	"system_nrf52.h"
+
+1489147648 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\external\segger_rtt\rtt_syscalls_gcc.c
+	<stdlib.h>
+	"SEGGER_RTT.h"
+
+1489147648 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\external\segger_rtt\segger_rtt.c
+	"SEGGER_RTT.h"
+	<string.h>
+
+1489147648 source:c:\users\servisas\ejs_cloud\tech\projects\source\nrf\sdk\nrf5_sdk_13.0.0\external\segger_rtt\segger_rtt_printf.c
+	"SEGGER_RTT.h"
+	"SEGGER_RTT_Conf.h"
+	<stdlib.h>
+	<stdarg.h>
+
+1497388353 source:c:\users\servisas\ejs_cloud\tech\projects\source\open\mma8453.c
+	"MMA8453.h"
+	"nrf_log.h"
+
+1497389106 source:c:\users\servisas\ejs_cloud\tech\projects\source\open\mma8453_port_nrf52.c
+	<string.h>
+	<stdbool.h>
+	"MMA8453.h"
+	"pecpec_nrf52.h"
+	"sdk_config.h"
+	"nrf_drv_twi.h"
+
+1458693304 source:c:\users\servisas\ejs_cloud\tech\projects\source\open\printf.c
+	"printf.h"
+
