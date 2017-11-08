@@ -6,6 +6,7 @@
 #include <stdint.h>
 
 /**< ports */
+#define EXT_POW     7
 #define I2C_PULLUP   8
 #define ACC_INT1_PIN    5
 #define ACC_INT2_PIN    6

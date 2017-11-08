@@ -65,13 +65,21 @@
 #include "app_timer.h"
 
 #include "ble_hci.h"
+#include "ble_hts.h"
+#include "ble_dis.h"
 #include "ble_advdata.h"
 #include "ble_advertising.h"
+#include "sensorsim.h"
+#include "softdevice_handler.h"
 #include "ble_conn_params.h"
 #include "ble_nus.h"
+#include "peer_manager.h"
 #include "printf.h" //Kustaa Nyholm / SpareTimeLabs printf implementation
 #include "app_scheduler.h"
 #include "softdevice_handler.h"
+#include "fds.h"
+#include "fstorage.h"
+#include "ble_conn_state.h"
 #include "nrf_ble_gatt.h"
 
 #define NRF_LOG_MODULE_NAME "PEC_BLE"
@@ -84,10 +92,22 @@
 #define APP_FEATURE_NOT_SUPPORTED       BLE_GATT_STATUS_ATTERR_APP_BEGIN + 2        /**< Reply when unsupported features are requested. */
 
 #define DEVICE_NAME                     "PecPec_Demo"                               /**< Name of device. Will be included in the advertising data. */
+#define MANUFACTURER_NAME               "NordicSemiconductor"                       /**< Manufacturer. Will be passed to Device Information Service. */
+#define MODEL_NUM                       "NS-HTS-EXAMPLE"                            /**< Model number. Will be passed to Device Information Service. */
+#define MANUFACTURER_ID                 0x1122334455                                /**< Manufacturer ID, part of System ID. Will be passed to Device Information Service. */
+#define ORG_UNIQUE_ID                   0x667788                                    /**< Organizational Unique ID, part of System ID. Will be passed to Device Information Service. */
+
 #define NUS_SERVICE_UUID_TYPE           BLE_UUID_TYPE_VENDOR_BEGIN                  /**< UUID type for the Nordic UART Service (vendor specific). */
 
-#define APP_ADV_INTERVAL                800                                          /**< The advertising interval (in units of 0.625 ms. This value (64) corresponds to 40 ms). */
-#define APP_ADV_TIMEOUT_IN_SECONDS      20                                          /**< The advertising timeout (in units of seconds). */
+#define TEMP_TYPE_AS_CHARACTERISTIC     0                                           /**< Determines if temperature type is given as characteristic (1) or as a field of measurement (0). */
+
+#define MIN_CELCIUS_DEGREES             3688                                        /**< Minimum temperature in celcius for use in the simulated measurement function (multiplied by 100 to avoid floating point arithmetic). */
+#define MAX_CELCIUS_DEGRESS             3972                                        /**< Maximum temperature in celcius for use in the simulated measurement function (multiplied by 100 to avoid floating point arithmetic). */
+#define CELCIUS_DEGREES_INCREMENT       36                                          /**< Value by which temperature is incremented/decremented for each call to the simulated measurement function (multiplied by 100 to avoid floating point arithmetic). */
+
+
+#define APP_ADV_INTERVAL                MSEC_TO_UNITS(40, UNIT_0_625_MS)             /**< The advertising interval (in units of 0.625 ms. This value (64) corresponds to 40 ms). */
+#define APP_ADV_TIMEOUT_IN_SECONDS      0 //0x3fff                                          /**< The advertising timeout (in units of seconds). */
 
 #define MIN_CONN_INTERVAL               MSEC_TO_UNITS(20, UNIT_1_25_MS)             /**< Minimum acceptable connection interval (20 ms), Connection interval uses 1.25 ms units. */
 #define MAX_CONN_INTERVAL               MSEC_TO_UNITS(75, UNIT_1_25_MS)             /**< Maximum acceptable connection interval (75 ms), Connection interval uses 1.25 ms units. */
@@ -97,15 +117,31 @@
 #define NEXT_CONN_PARAMS_UPDATE_DELAY   APP_TIMER_TICKS(30000)                      /**< Time between each call to sd_ble_gap_conn_param_update after the first call (30 seconds). */
 #define MAX_CONN_PARAMS_UPDATE_COUNT    3                                           /**< Number of attempts before giving up the connection parameter negotiation. */
 
+#define SEC_PARAM_BOND                  1                                           /**< Perform bonding. */
+#define SEC_PARAM_MITM                  0                                           /**< Man In The Middle protection not required. */
+#define SEC_PARAM_LESC                  0                                           /**< LE Secure Connections not enabled. */
+#define SEC_PARAM_KEYPRESS              0                                           /**< Keypress notifications not enabled. */
+#define SEC_PARAM_IO_CAPABILITIES       BLE_GAP_IO_CAPS_NONE                        /**< No I/O capabilities. */
+#define SEC_PARAM_OOB                   0                                           /**< Out Of Band data not available. */
+#define SEC_PARAM_MIN_KEY_SIZE          7                                           /**< Minimum encryption key size. */
+#define SEC_PARAM_MAX_KEY_SIZE          16                                          /**< Maximum encryption key size. */
+
 #define DEAD_BEEF                       0xDEADBEEF                                  /**< Value used as error code on stack dump, can be used to identify stack location on stack unwind. */
 
 static ble_nus_t                        m_nus;                                      /**< Structure to identify the Nordic UART Service. */
+static ble_hts_t                        m_hts;                                      /**< Structure used to identify the health thermometer service. */
 static uint16_t                         m_conn_handle = BLE_CONN_HANDLE_INVALID;    /**< Handle of the current connection. */
 
 static nrf_ble_gatt_t                   m_gatt;                                     /**< GATT module instance. */
-static ble_uuid_t                       m_adv_uuids[] = {{BLE_UUID_NUS_SERVICE, NUS_SERVICE_UUID_TYPE}};  /**< Universally unique service identifier. */
+static ble_uuid_t                       m_adv_uuids[] = {{BLE_UUID_NUS_SERVICE, NUS_SERVICE_UUID_TYPE},
+                                                        {BLE_UUID_HEALTH_THERMOMETER_SERVICE, BLE_UUID_TYPE_BLE},
+                                                       {BLE_UUID_DEVICE_INFORMATION_SERVICE, BLE_UUID_TYPE_BLE}};  /**< Universally unique service identifier. */
 static uint16_t                         m_ble_nus_max_data_len = BLE_GATT_ATT_MTU_DEFAULT - 3;  /**< Maximum length of data (in bytes) that can be transmitted to the peer by the Nordic UART service module. */
 
+
+static sensorsim_cfg_t   m_temp_celcius_sim_cfg;                                    /**< Temperature simulator configuration. */
+static sensorsim_state_t m_temp_celcius_sim_state;                                  /**< Temperature simulator state. */
+static bool              m_hts_meas_ind_conf_pending = false;                       /**< Flag to keep track of when an indication confirmation is pending. */
 
 /**< Internal function prototypes */
 static void ble_stack_init(void);
@@ -114,6 +150,10 @@ static void gatt_init(void);
 static void services_init(void);
 static void advertising_init(void);
 static void conn_params_init(void);
+static void sensor_simulator_init(void);
+static void peer_manager_init(void);
+static void advertising_start(bool erase_bonds);
+static void hts_sim_measurement(ble_hts_meas_t * p_meas);
 
 /**< ************************************************************* */
 /**< Exported functions */
@@ -128,9 +168,11 @@ void ble_init()
     ble_stack_init();
     gap_params_init();
     gatt_init();
-    services_init();
     advertising_init();
+    services_init();
+    sensor_simulator_init();
     conn_params_init();
+    peer_manager_init();
 }
 
 /** \brief Start BLE advertising
@@ -167,6 +209,42 @@ ret_code_t ble_send(uint8_t * p_string, uint16_t length){
     return err_code;
 }
 
+
+/**@brief Function for simulating and sending one Temperature Measurement.
+ */
+void temperature_measurement_send(void)
+{
+    ble_hts_meas_t simulated_meas;
+    ret_code_t     err_code;
+
+    printf("TEMP_SEND\r\n");
+    if (!m_hts_meas_ind_conf_pending)
+    {
+
+        hts_sim_measurement(&simulated_meas);
+        //simulated_meas.temp_in_celcius.exponent = 1;
+        //simulated_meas.temp_in_celcius.mantissa = 33;
+        err_code = ble_hts_measurement_send(&m_hts, &simulated_meas);
+
+        switch (err_code)
+        {
+            case NRF_SUCCESS:
+                // Measurement was successfully sent, wait for confirmation.
+                m_hts_meas_ind_conf_pending = true;
+                break;
+
+            case NRF_ERROR_INVALID_STATE:
+                // Ignore error.
+                break;
+
+            default:
+                APP_ERROR_HANDLER(err_code);
+                break;
+        }
+    }
+}
+
+
 /**< ************************************************************* */
 /**< Internal functions */
 /**< ************************************************************* */
@@ -184,6 +262,126 @@ ret_code_t ble_send(uint8_t * p_string, uint16_t length){
 void assert_nrf_callback(uint16_t line_num, const uint8_t * p_file_name)
 {
     app_error_handler(DEAD_BEEF, line_num, p_file_name);
+}
+
+/**@brief Function for handling Peer Manager events.
+ *
+ * @param[in] p_evt  Peer Manager event.
+ */
+static void pm_evt_handler(pm_evt_t const * p_evt)
+{
+    ret_code_t err_code;
+    bool       is_indication_enabled;
+
+    switch (p_evt->evt_id)
+    {
+        case PM_EVT_BONDED_PEER_CONNECTED:
+        {
+            NRF_LOG_INFO("Connected to a previously bonded device.\r\n");
+        } break;
+
+        case PM_EVT_CONN_SEC_SUCCEEDED:
+        {
+            NRF_LOG_INFO("Connection secured: role: %d, conn_handle: 0x%x, procedure: %d.\r\n",
+                         ble_conn_state_role(p_evt->conn_handle),
+                         p_evt->conn_handle,
+                         p_evt->params.conn_sec_succeeded.procedure);
+
+            // Send a single temperature measurement if indication is enabled.
+            // NOTE: For this to work, make sure ble_hts_on_ble_evt() is called before
+            // pm_evt_handler() in ble_evt_dispatch().
+            err_code = ble_hts_is_indication_enabled(&m_hts, &is_indication_enabled);
+            APP_ERROR_CHECK(err_code);
+            if (is_indication_enabled)
+            {
+                temperature_measurement_send();
+            }
+        } break;
+
+        case PM_EVT_CONN_SEC_FAILED:
+        {
+            NRF_LOG_INFO("PM_EVT_CONN_SEC_FAILED\r\n");
+            /* Often, when securing fails, it shouldn't be restarted, for security reasons.
+             * Other times, it can be restarted directly.
+             * Sometimes it can be restarted, but only after changing some Security Parameters.
+             * Sometimes, it cannot be restarted until the link is disconnected and reconnected.
+             * Sometimes it is impossible, to secure the link, or the peer device does not support it.
+             * How to handle this error is highly application dependent. */
+        } break;
+
+        case PM_EVT_CONN_SEC_CONFIG_REQ:
+        {
+            NRF_LOG_INFO("PM_EVT_CONN_SEC_CONFIG_REQ\r\n");
+            // Reject pairing request from an already bonded peer.
+            pm_conn_sec_config_t conn_sec_config = {.allow_repairing = false};
+            pm_conn_sec_config_reply(p_evt->conn_handle, &conn_sec_config);
+        } break;
+
+        case PM_EVT_STORAGE_FULL:
+        {
+            NRF_LOG_INFO("PM_EVT_STORAGE_FULL\r\n");
+            // Run garbage collection on the flash.
+            err_code = fds_gc();
+            if (err_code == FDS_ERR_BUSY || err_code == FDS_ERR_NO_SPACE_IN_QUEUES)
+            {
+                // Retry.
+            }
+            else
+            {
+                APP_ERROR_CHECK(err_code);
+            }
+        } break;
+
+        case PM_EVT_PEERS_DELETE_SUCCEEDED:
+        {
+            NRF_LOG_INFO("PM_EVT_PEERS_DELETE_SUCCEEDED\r\n");
+            advertising_start(true);
+        } break;
+
+        case PM_EVT_LOCAL_DB_CACHE_APPLY_FAILED:
+        {
+            NRF_LOG_INFO("PM_EVT_LOCAL_DB_CACHE_APPLY_FAILED\r\n");
+            // The local database has likely changed, send service changed indications.
+            pm_local_database_has_changed();
+        } break;
+
+        case PM_EVT_PEER_DATA_UPDATE_FAILED:
+        {
+            NRF_LOG_INFO("PM_EVT_PEER_DATA_UPDATE_FAILED\r\n");
+            // Assert.
+            APP_ERROR_CHECK(p_evt->params.peer_data_update_failed.error);
+        } break;
+
+        case PM_EVT_PEER_DELETE_FAILED:
+        {
+            NRF_LOG_INFO("PM_EVT_PEER_DELETE_FAILED\r\n");
+            // Assert.
+            APP_ERROR_CHECK(p_evt->params.peer_delete_failed.error);
+        } break;
+
+        case PM_EVT_PEERS_DELETE_FAILED:
+        {
+            NRF_LOG_INFO("PM_EVT_PEERS_DELETE_FAILED\r\n");
+            // Assert.
+            APP_ERROR_CHECK(p_evt->params.peers_delete_failed_evt.error);
+        } break;
+
+        case PM_EVT_ERROR_UNEXPECTED:
+        {
+            NRF_LOG_INFO("PM_EVT_ERROR_UNEXPECTED\r\n");
+            // Assert.
+            APP_ERROR_CHECK(p_evt->params.error_unexpected.error);
+        } break;
+
+        case PM_EVT_CONN_SEC_START:
+        case PM_EVT_PEER_DATA_UPDATE_SUCCEEDED:
+        case PM_EVT_PEER_DELETE_SUCCEEDED:
+        case PM_EVT_LOCAL_DB_CACHE_APPLIED:
+        case PM_EVT_SERVICE_CHANGED_IND_SENT:
+        case PM_EVT_SERVICE_CHANGED_IND_CONFIRMED:
+        default:
+            break;
+    }
 }
 
 /**@brief Function for the GAP initialization.
@@ -204,6 +402,8 @@ static void gap_params_init(void)
                                           strlen(DEVICE_NAME));
     APP_ERROR_CHECK(err_code);
 
+    err_code = sd_ble_gap_appearance_set(BLE_APPEARANCE_GENERIC_THERMOMETER);
+    APP_ERROR_CHECK(err_code);
     memset(&gap_conn_params, 0, sizeof(gap_conn_params));
 
     gap_conn_params.min_conn_interval = MIN_CONN_INTERVAL;
@@ -259,13 +459,130 @@ static void nus_data_handler(ble_nus_t * p_nus, uint8_t * p_data, uint16_t lengt
 /**@snippet [Handling the data received over BLE] */
 
 
+
+/**@brief Function for initializing the sensor simulators.
+ */
+static void sensor_simulator_init(void)
+{
+    // Temperature is in celcius (it is multiplied by 100 to avoid floating point arithmetic).
+    m_temp_celcius_sim_cfg.min          = MIN_CELCIUS_DEGREES;
+    m_temp_celcius_sim_cfg.max          = MAX_CELCIUS_DEGRESS;
+    m_temp_celcius_sim_cfg.incr         = CELCIUS_DEGREES_INCREMENT;
+    m_temp_celcius_sim_cfg.start_at_max = false;
+
+    sensorsim_init(&m_temp_celcius_sim_state, &m_temp_celcius_sim_cfg);
+}
+
+
+/**@brief Function for populating simulated health thermometer measurement.
+ */
+static void hts_sim_measurement(ble_hts_meas_t * p_meas)
+{
+    static ble_date_time_t time_stamp = { 2012, 12, 5, 11, 50, 0 };
+
+    uint32_t celciusX100;
+
+    p_meas->temp_in_fahr_units = false;
+    p_meas->time_stamp_present = true;
+    p_meas->temp_type_present  = (TEMP_TYPE_AS_CHARACTERISTIC ? false : true);
+
+    celciusX100 = sensorsim_measure(&m_temp_celcius_sim_state, &m_temp_celcius_sim_cfg);
+
+    p_meas->temp_in_celcius.exponent = -2;
+    p_meas->temp_in_celcius.mantissa = celciusX100;
+    p_meas->temp_in_fahr.exponent    = -2;
+    p_meas->temp_in_fahr.mantissa    = (32 * 100) + ((celciusX100 * 9) / 5);
+    p_meas->time_stamp               = time_stamp;
+    p_meas->temp_type                = BLE_HTS_TEMP_TYPE_FINGER;
+
+    // update simulated time stamp
+    time_stamp.seconds += 27;
+    if (time_stamp.seconds > 59)
+    {
+        time_stamp.seconds -= 60;
+        time_stamp.minutes++;
+        if (time_stamp.minutes > 59)
+        {
+            time_stamp.minutes = 0;
+        }
+    }
+}
+
+
+/**@brief Function for handling the Health Thermometer Service events.
+ *
+ * @details This function will be called for all Health Thermometer Service events which are passed
+ *          to the application.
+ *
+ * @param[in] p_hts  Health Thermometer Service structure.
+ * @param[in] p_evt  Event received from the Health Thermometer Service.
+ */
+static void on_hts_evt(ble_hts_t * p_hts, ble_hts_evt_t * p_evt)
+{
+    printf("TEMP:EVENT\r\n");
+    switch (p_evt->evt_type)
+    {
+        case BLE_HTS_EVT_INDICATION_ENABLED:
+            // Indication has been enabled, send a single temperature measurement
+            temperature_measurement_send();
+            break;
+
+        case BLE_HTS_EVT_INDICATION_CONFIRMED:
+            m_hts_meas_ind_conf_pending = false;
+            break;
+
+        default:
+            // No implementation needed.
+            break;
+    }
+}
+
+
 /**@brief Function for initializing services that will be used by the application.
  */
 static void services_init(void)
 {
     uint32_t       err_code;
     ble_nus_init_t nus_init;
+    ble_hts_init_t   hts_init;
+    ble_dis_init_t   dis_init;
+    ble_dis_sys_id_t sys_id;
 
+    // Initialize Health Thermometer Service
+    memset(&hts_init, 0, sizeof(hts_init));
+
+    hts_init.evt_handler                 = on_hts_evt;
+    hts_init.temp_type_as_characteristic = TEMP_TYPE_AS_CHARACTERISTIC;
+    hts_init.temp_type                   = BLE_HTS_TEMP_TYPE_BODY;
+
+    // Here the sec level for the Health Thermometer Service can be changed/increased.
+    BLE_GAP_CONN_SEC_MODE_SET_ENC_NO_MITM(&hts_init.hts_meas_attr_md.cccd_write_perm);
+    BLE_GAP_CONN_SEC_MODE_SET_NO_ACCESS(&hts_init.hts_meas_attr_md.read_perm);
+    BLE_GAP_CONN_SEC_MODE_SET_NO_ACCESS(&hts_init.hts_meas_attr_md.write_perm);
+
+    BLE_GAP_CONN_SEC_MODE_SET_OPEN(&hts_init.hts_temp_type_attr_md.read_perm);
+    BLE_GAP_CONN_SEC_MODE_SET_NO_ACCESS(&hts_init.hts_temp_type_attr_md.write_perm);
+
+    err_code = ble_hts_init(&m_hts, &hts_init);
+    APP_ERROR_CHECK(err_code);
+
+    // Initialize Device Information Service.
+    memset(&dis_init, 0, sizeof(dis_init));
+
+    ble_srv_ascii_to_utf8(&dis_init.manufact_name_str, MANUFACTURER_NAME);
+    ble_srv_ascii_to_utf8(&dis_init.model_num_str, MODEL_NUM);
+
+    sys_id.manufacturer_id            = MANUFACTURER_ID;
+    sys_id.organizationally_unique_id = ORG_UNIQUE_ID;
+    dis_init.p_sys_id                 = &sys_id;
+
+    BLE_GAP_CONN_SEC_MODE_SET_OPEN(&dis_init.dis_attr_md.read_perm);
+    BLE_GAP_CONN_SEC_MODE_SET_NO_ACCESS(&dis_init.dis_attr_md.write_perm);
+
+    err_code = ble_dis_init(&dis_init);
+    APP_ERROR_CHECK(err_code);
+
+    // Initialize UART Service.
     memset(&nus_init, 0, sizeof(nus_init));
 
     nus_init.data_handler = nus_data_handler;
@@ -358,21 +675,37 @@ static void on_adv_evt(ble_adv_evt_t ble_adv_evt)
 static void on_ble_evt(ble_evt_t * p_ble_evt)
 {
     uint32_t err_code;
+    bool       is_indication_enabled;
 
     switch (p_ble_evt->header.evt_id)
     {
     case BLE_GAP_EVT_CONNECTED:
         m_conn_handle = p_ble_evt->evt.gap_evt.conn_handle;
 
-        NRF_LOG_INFO("Connected\r\n");
+        NRF_LOG_INFO("EVENT:Connected\r\n");
+
+
+        // Send a single temperature measurement if indication is enabled.
+        // NOTE: For this to work, make sure ble_hts_on_ble_evt() is called before
+        // pm_evt_handler() in ble_evt_dispatch().
+        err_code = ble_hts_is_indication_enabled(&m_hts, &is_indication_enabled);
+        APP_ERROR_CHECK(err_code);
+        if (is_indication_enabled)
+        {
+            temperature_measurement_send();
+        }
+
         break; // BLE_GAP_EVT_CONNECTED
 
     case BLE_GAP_EVT_DISCONNECTED:
         m_conn_handle = BLE_CONN_HANDLE_INVALID;
-        NRF_LOG_INFO("Disconnected\r\n");
+        m_hts_meas_ind_conf_pending = false;
+        NRF_LOG_INFO("EVENT:Disconnected\r\n");
         break; // BLE_GAP_EVT_DISCONNECTED
 
     case BLE_GAP_EVT_SEC_PARAMS_REQUEST:
+        NRF_LOG_INFO("EVENT:BLE_GAP_EVT_SEC_PARAMS_REQUEST\r\n");
+        //break; //device disconnects when enters here, try to exit from loop here
         // Pairing not supported
         err_code = sd_ble_gap_sec_params_reply(m_conn_handle, BLE_GAP_SEC_STATUS_PAIRING_NOT_SUPP, NULL, NULL);
         APP_ERROR_CHECK(err_code);
@@ -380,6 +713,7 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
 
     case BLE_GAP_EVT_DATA_LENGTH_UPDATE_REQUEST:
     {
+        NRF_LOG_INFO("EVENT:BLE_GAP_EVT_DATA_LENGTH_UPDATE_REQUEST\r\n");
         ble_gap_data_length_params_t dl_params;
 
         // Clearing the struct will effectivly set members to @ref BLE_GAP_DATA_LENGTH_AUTO
@@ -390,12 +724,14 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
     break;
 
     case BLE_GATTS_EVT_SYS_ATTR_MISSING:
+        NRF_LOG_INFO("EVENT:BLE_GATTS_EVT_SYS_ATTR_MISSING\r\n");
         // No system attributes have been stored.
         err_code = sd_ble_gatts_sys_attr_set(m_conn_handle, NULL, 0, 0);
         APP_ERROR_CHECK(err_code);
         break; // BLE_GATTS_EVT_SYS_ATTR_MISSING
 
     case BLE_GATTC_EVT_TIMEOUT:
+        NRF_LOG_INFO("EVENT:BLE_GATTC_EVT_TIMEOUT\r\n");
         // Disconnect on GATT Client timeout event.
         err_code = sd_ble_gap_disconnect(p_ble_evt->evt.gattc_evt.conn_handle,
                                          BLE_HCI_REMOTE_USER_TERMINATED_CONNECTION);
@@ -403,6 +739,7 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
         break; // BLE_GATTC_EVT_TIMEOUT
 
     case BLE_GATTS_EVT_TIMEOUT:
+        NRF_LOG_INFO("EVENT:BLE_GATTS_EVT_TIMEOUT\r\n");
         // Disconnect on GATT Server timeout event.
         err_code = sd_ble_gap_disconnect(p_ble_evt->evt.gatts_evt.conn_handle,
                                          BLE_HCI_REMOTE_USER_TERMINATED_CONNECTION);
@@ -410,12 +747,14 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
         break; // BLE_GATTS_EVT_TIMEOUT
 
     case BLE_EVT_USER_MEM_REQUEST:
+        NRF_LOG_INFO("EVENT:BLE_EVT_USER_MEM_REQUEST\r\n");
         err_code = sd_ble_user_mem_reply(p_ble_evt->evt.gattc_evt.conn_handle, NULL);
         APP_ERROR_CHECK(err_code);
         break; // BLE_EVT_USER_MEM_REQUEST
 
     case BLE_GATTS_EVT_RW_AUTHORIZE_REQUEST:
     {
+        NRF_LOG_INFO("EVENT:BLE_GATTS_EVT_RW_AUTHORIZE_REQUEST\r\n");
         ble_gatts_evt_rw_authorize_request_t  req;
         ble_gatts_rw_authorize_reply_params_t auth_reply;
 
@@ -461,14 +800,43 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
  */
 static void ble_evt_dispatch(ble_evt_t * p_ble_evt)
 {
-    ble_conn_params_on_ble_evt(p_ble_evt);
-    nrf_ble_gatt_on_ble_evt(&m_gatt, p_ble_evt);
+    ble_hts_on_ble_evt(&m_hts, p_ble_evt);
     ble_nus_on_ble_evt(&m_nus, p_ble_evt);
+    ble_conn_params_on_ble_evt(p_ble_evt);
+    /** The Connection state module has to be fed BLE events in order to function correctly
+     * Remember to call ble_conn_state_on_ble_evt before calling any ble_conns_state_* functions. */
+    ble_conn_state_on_ble_evt(p_ble_evt);
+    pm_on_ble_evt(p_ble_evt);
     on_ble_evt(p_ble_evt);
     ble_advertising_on_ble_evt(p_ble_evt);
+    nrf_ble_gatt_on_ble_evt(&m_gatt, p_ble_evt);
+
+
+
+    /** The Connection state module has to be fed BLE events in order to function correctly
+     * Remember to call ble_conn_state_on_ble_evt before calling any ble_conns_state_* functions. */
+    //ble_conn_state_on_ble_evt(p_ble_evt);
 
 }
 
+/**@brief Function for dispatching a system event to interested modules.
+ *
+ * @details This function is called from the System event interrupt handler after a system
+ *          event has been received.
+ *
+ * @param[in] sys_evt  System stack event.
+ */
+static void sys_evt_dispatch(uint32_t sys_evt)
+{
+    // Dispatch the system event to the fstorage module, where it will be
+    // dispatched to the Flash Data Storage (FDS) module.
+    fs_sys_event_handler(sys_evt);
+
+    // Dispatch to the Advertising module last, since it will check if there are any
+    // pending flash operations in fstorage. Let fstorage process system events first,
+    // so that it can report correctly to the Advertising module.
+    ble_advertising_on_sys_evt(sys_evt);
+}
 
 /**@brief Function for the SoftDevice initialization.
  *
@@ -490,6 +858,12 @@ static void ble_stack_init(void)
 
     // Overwrite some of the default configurations for the BLE stack.
     ble_cfg_t ble_cfg;
+
+   // Configure the number of custom UUIDS.
+    memset(&ble_cfg, 0, sizeof(ble_cfg));
+    ble_cfg.common_cfg.vs_uuid_cfg.vs_uuid_count = 0;
+    err_code = sd_ble_cfg_set(BLE_COMMON_CFG_VS_UUID, &ble_cfg, ram_start);
+    APP_ERROR_CHECK(err_code);
 
     // Configure the maximum number of connections.
     memset(&ble_cfg, 0, sizeof(ble_cfg));
@@ -521,6 +895,10 @@ static void ble_stack_init(void)
     // Subscribe for BLE events.
     err_code = softdevice_ble_evt_handler_set(ble_evt_dispatch);
     APP_ERROR_CHECK(err_code);
+
+    // Register with the SoftDevice handler module for BLE events.
+    err_code = softdevice_sys_evt_handler_set(sys_evt_dispatch);
+    APP_ERROR_CHECK(err_code);
 }
 
 
@@ -548,6 +926,68 @@ static void gatt_init(void)
     APP_ERROR_CHECK(err_code);
 }
 
+
+/**@brief Function for the Peer Manager initialization.
+ */
+static void peer_manager_init(void)
+{
+    ble_gap_sec_params_t sec_param;
+    ret_code_t           err_code;
+
+    err_code = pm_init();
+    APP_ERROR_CHECK(err_code);
+
+    memset(&sec_param, 0, sizeof(ble_gap_sec_params_t));
+
+    // Security parameters to be used for all security procedures.
+    sec_param.bond           = SEC_PARAM_BOND;
+    sec_param.mitm           = SEC_PARAM_MITM;
+    sec_param.lesc           = SEC_PARAM_LESC;
+    sec_param.keypress       = SEC_PARAM_KEYPRESS;
+    sec_param.io_caps        = SEC_PARAM_IO_CAPABILITIES;
+    sec_param.oob            = SEC_PARAM_OOB;
+    sec_param.min_key_size   = SEC_PARAM_MIN_KEY_SIZE;
+    sec_param.max_key_size   = SEC_PARAM_MAX_KEY_SIZE;
+    sec_param.kdist_own.enc  = 1;
+    sec_param.kdist_own.id   = 1;
+    sec_param.kdist_peer.enc = 1;
+    sec_param.kdist_peer.id  = 1;
+
+    err_code = pm_sec_params_set(&sec_param);
+    APP_ERROR_CHECK(err_code);
+
+    err_code = pm_register(pm_evt_handler);
+    APP_ERROR_CHECK(err_code);
+}
+
+/**@brief Clear bond information from persistent storage.
+ */
+static void delete_bonds(void)
+{
+    ret_code_t err_code;
+
+    NRF_LOG_INFO("Erase bonds!\r\n");
+
+    err_code = pm_peers_delete();
+    APP_ERROR_CHECK(err_code);
+}
+
+/**@brief Function for starting advertising.
+ */
+static void advertising_start(bool erase_bonds)
+{
+    if (erase_bonds == true)
+    {
+        delete_bonds();
+        // Advertising is started by PM_EVT_PEERS_DELETE_SUCCEEDED event.
+    }
+    else
+    {
+        uint32_t err_code = ble_advertising_start(BLE_ADV_MODE_FAST);
+        APP_ERROR_CHECK(err_code);
+    }
+}
+
 /**@brief Function for initializing the Advertising functionality.
  */
 static void advertising_init(void)
@@ -561,7 +1001,9 @@ static void advertising_init(void)
     memset(&advdata, 0, sizeof(advdata));
     advdata.name_type          = BLE_ADVDATA_FULL_NAME;
     advdata.include_appearance = false;
-    advdata.flags              = BLE_GAP_ADV_FLAGS_LE_ONLY_LIMITED_DISC_MODE;
+    advdata.flags              = BLE_GAP_ADV_FLAGS_LE_ONLY_GENERAL_DISC_MODE;
+    advdata.uuids_complete.uuid_cnt = sizeof(m_adv_uuids) / sizeof(m_adv_uuids[0]);
+    advdata.uuids_complete.p_uuids  = m_adv_uuids;
 
     memset(&scanrsp, 0, sizeof(scanrsp));
     scanrsp.uuids_complete.uuid_cnt = sizeof(m_adv_uuids) / sizeof(m_adv_uuids[0]);
@@ -571,6 +1013,10 @@ static void advertising_init(void)
     options.ble_adv_fast_enabled  = true;
     options.ble_adv_fast_interval = APP_ADV_INTERVAL;
     options.ble_adv_fast_timeout  = APP_ADV_TIMEOUT_IN_SECONDS;
+
+//    options.ble_adv_slow_enabled = true;
+//    options.ble_adv_slow_interval = APP_ADV_INTERVAL;
+//    options.ble_adv_slow_timeout = APP_ADV_TIMEOUT_IN_SECONDS;
 
     err_code = ble_advertising_init(&advdata, &scanrsp, &options, on_adv_evt, NULL);
     APP_ERROR_CHECK(err_code);

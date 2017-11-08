@@ -54,6 +54,7 @@
 #include "nordic_common.h"
 #include "nrf_sdm.h"
 #include "nrf_soc.h"
+#include "nrf_delay.h"
 
 #include "nrf_drv_systick.h"
 #include "app_error.h"
@@ -87,6 +88,7 @@
 //Timers
 //APP_TIMER_DEF(timer_100ms_id);
 APP_TIMER_DEF(timer_1s_id);
+static volatile uint8_t temp_request = false;
 
 char RTT_Debug_Tx[SEGGER_RTT_CONFIG_BUFFER_SIZE_UP];
 
@@ -98,7 +100,8 @@ static void timer_1s_handler(void * p_context)
 {
     UNUSED_PARAMETER(p_context);
     LED1_blink(50);
-    Acc_Get_and_Display();
+    //Acc_Get_and_Display();
+    temp_request++; //request data from temp sensor
 
 
 //    uint32_t Int1, Int2;
@@ -124,7 +127,6 @@ void pchar_ToSpareTimeLabs(void* p, char ch)
 int main(void)
 {
     bool     erase_bonds;
-
     /*Connect with Kustaa Nyholm / SpareTimeLabs printf implementation*/
     init_printf(NULL, pchar_ToSpareTimeLabs);
 
@@ -139,6 +141,8 @@ int main(void)
 
     ///TWI - I2C init
     twi_init();
+    ///temp sensor init
+    nrf_delay_ms(15);  //temp sensor startup time
     ///Init IO
     buttons_leds_ports_init(&erase_bonds);
     ///INIT BLE
@@ -149,9 +153,11 @@ int main(void)
     printf("\r\nUART: Start\r\n");
 #endif
 
+
     ///init both accelerometers
     MMA8453_Init_and_Test(&Acc1);
     MMA8453_Init_and_Test(&Acc2);
+
 
     ///DUMP ACC registers
 //    uint16_t i = 1;
@@ -178,6 +184,46 @@ int main(void)
     // Enter main loop.
     for (;;)
     {
+        ///temp sensor test
+        if(temp_request == 5) { //read sensor data every 5 seconds
+            temp_request = 0;
+            I2C_PullUp_On();
+            uint8_t buffer[9];
+            uint8_t c;
+            for (c = 0; c < sizeof(buffer); c++) buffer[c] = 0;
+            MMA_res res;
+            UNUSED_PARAMETER(res);
+            res = MMA8453_readBytes_BLOCK (0x40, 0xE3, 0x03, buffer, 0);
+            float t;
+            uint8_t decit;
+            t = (float)((buffer[0] << 8) | (buffer[1] & 0xFC));
+            t *= 175.72;
+            t /= 65536;
+            t -= 46.85;
+            decit = ((uint8_t)(t * 10) % 10);
+            //NRF_LOG_INFO("TEMP: %x %x %x, %i\r\n", buffer[0], buffer[1], buffer[2], res);
+
+
+            res = MMA8453_readBytes_BLOCK (0x40, 0xE5, 0x03, buffer, 0);
+            I2C_PullUp_Off();
+            float h;
+            h = (float)((buffer[0] << 8) | (buffer[1] & 0xFC));
+
+            h *= 125;
+            h /= 65536;
+            h -= 6;
+            // NRF_LOG_INFO("HUMIDITY: %x %x %x, %i\r\n", buffer[0], buffer[1], buffer[2], res);
+            NRF_LOG_INFO("TEMP, HUM: %i.%u; %i %%RH\r\n", t, decit, h);
+
+
+            static uint8_t data_array[BLE_NUS_MAX_DATA_LEN];
+            sprintf((char *) data_array, "2: TEMP, HUM: %d.%u; %u %%RH\r", (int8_t)t, decit, (uint8_t)h);
+            ble_send(data_array, strlen((char *) data_array));
+
+            temperature_measurement_send();
+
+            NRF_LOG_FLUSH();
+        }
         power_manage();
     }
 }

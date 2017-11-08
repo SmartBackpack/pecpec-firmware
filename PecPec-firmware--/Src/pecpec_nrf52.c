@@ -419,6 +419,11 @@ void buttons_leds_ports_init()
     ///GPIOTE driver
     APP_ERROR_CHECK(nrf_drv_gpiote_init());
 
+    ///External sensors power (not Accelerometer)
+    nrf_gpio_cfg_output(EXT_POW);
+    nrf_gpio_pin_set(EXT_POW);
+
+
     ///I2c pullup
     nrf_gpio_cfg_output(I2C_PULLUP);
     nrf_gpio_pin_clear(I2C_PULLUP);

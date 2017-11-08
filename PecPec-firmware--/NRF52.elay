@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <EmBitz_layout_file>
-	<ActiveTarget name="Release" />
+	<ActiveTarget name="Debug" />
 	<File name="gcc_nrf52.ld" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="411" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Inc\app_config.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Inc\app_config.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="668" topLine="0" />
+			<Cursor1 position="103" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Inc\pecpec_ble.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Inc\pecpec_ble.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="139" topLine="0" />
+			<Cursor1 position="314" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Inc\pecpec_nrf52.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Inc\pecpec_nrf52.h" open="0" top="0" tabpos="40" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="658" topLine="0" />
+			<Cursor1 position="587" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Inc\sdk_config.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Inc\sdk_config.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="88733" topLine="3921" />
+			<Cursor1 position="68000" topLine="3226" />
 		</Cursor>
 	</File>
 	<File name="Inc\startup_config.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -36,134 +36,74 @@
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Src\main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Src\main.c" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4394" topLine="36" />
+			<Cursor1 position="4626" topLine="130" />
 		</Cursor>
 	</File>
-	<File name="Src\pecpec_ble.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Src\pecpec_ble.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="18149" topLine="435" />
+			<Cursor1 position="10203" topLine="138" />
 		</Cursor>
 	</File>
-	<File name="Src\pecpec_nrf52.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Src\pecpec_nrf52.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3210" topLine="103" />
+			<Cursor1 position="2116" topLine="119" />
 		</Cursor>
 	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_advertising\ble_advertising.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_advertising\ble_advertising.c" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2133" topLine="22" />
+			<Cursor1 position="17963" topLine="489" />
 		</Cursor>
 	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_services\ble_nus\ble_nus.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_conn_state.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="10591" topLine="283" />
+			<Cursor1 position="5691" topLine="101" />
 		</Cursor>
 	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\nrf_ble_gatt\nrf_ble_gatt.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\id_manager.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3981" topLine="70" />
+			<Cursor1 position="19410" topLine="581" />
 		</Cursor>
 	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\clock\nrf_drv_clock.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\peer_manager.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="8628" topLine="240" />
+			<Cursor1 position="20224" topLine="454" />
 		</Cursor>
 	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\common\nrf_drv_common.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\twi_master\nrf_drv_twi.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2106" topLine="23" />
+			<Cursor1 position="2333" topLine="20" />
 		</Cursor>
 	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\gpiote\nrf_drv_gpiote.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\fds\fds.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="14694" topLine="480" />
+			<Cursor1 position="2193" topLine="30" />
 		</Cursor>
 	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\twi_master\nrf_drv_twi.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\hardfault\hardfault_implementation.c" open="0" top="0" tabpos="43" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2357" topLine="34" />
+			<Cursor1 position="2777" topLine="32" />
 		</Cursor>
 	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\gpiote\app_gpiote.c" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\timer\app_timer.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="6991" topLine="143" />
+			<Cursor1 position="15707" topLine="387" />
 		</Cursor>
 	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\hardfault\hardfault_implementation.c" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Source\open\MMA8453.c" open="0" top="0" tabpos="46" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2973" topLine="38" />
+			<Cursor1 position="4201" topLine="86" />
 		</Cursor>
 	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\hardfault\nrf52\handler\hardfault_handler_gcc.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Source\open\MMA8453.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1069" topLine="40" />
+			<Cursor1 position="3666" topLine="76" />
 		</Cursor>
 	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\timer\app_timer.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\Source\open\MMA8453_port_NRF52.c" open="0" top="0" tabpos="45" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="34250" topLine="965" />
-		</Cursor>
-	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\uart\app_uart_fifo.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2198" topLine="30" />
-		</Cursor>
-	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\app_error_weak.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2453" topLine="30" />
-		</Cursor>
-	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\softdevice\common\softdevice_handler\softdevice_handler.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="15677" topLine="505" />
-		</Cursor>
-	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\toolchain\gcc\gcc_startup_nrf52.S" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="8661" topLine="204" />
-		</Cursor>
-	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\RTT_Syscalls_GCC.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4027" topLine="61" />
-		</Cursor>
-	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\SEGGER_RTT.c" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="5369" topLine="106" />
-		</Cursor>
-	</File>
-	<File name="..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\SEGGER_RTT_printf.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="14018" topLine="63" />
-		</Cursor>
-	</File>
-	<File name="..\Source\open\MMA8453.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="6042" topLine="109" />
-		</Cursor>
-	</File>
-	<File name="..\Source\open\MMA8453.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3550" topLine="80" />
-		</Cursor>
-	</File>
-	<File name="..\Source\open\MMA8453_port_NRF52.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4363" topLine="96" />
-		</Cursor>
-	</File>
-	<File name="..\Source\open\printf.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4847" topLine="210" />
-		</Cursor>
-	</File>
-	<File name="..\Source\open\printf.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4888" topLine="90" />
+			<Cursor1 position="1583" topLine="20" />
 		</Cursor>
 	</File>
 </EmBitz_layout_file>
