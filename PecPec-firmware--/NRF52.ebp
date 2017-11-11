@@ -235,6 +235,7 @@
 			<Add directory="$(SDK_ROOT_13)\components\toolchain\cmsis\include" />
 			<Add directory="$(SDK_ROOT_13)\components\toolchain\gcc" />
 			<Add directory="$(SDK_ROOT_13)\external\segger_rtt" />
+			<Add directory="$(SDK_ROOT_13)\components\libraries\sensorsim" />
 		</Compiler>
 		<Assembler>
 			<Add option="--defsym,SER_CONNECTIVITY" />
@@ -287,124 +288,199 @@
 		<Unit filename="Src\pecpec_nrf52.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_advertising\ble_advertising.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_advertising\ble_advertising.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_services\ble_nus\ble_nus.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_services\ble_bas\ble_bas.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_advdata.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_services\ble_bas\ble_bas.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_services\ble_dis\ble_dis.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_conn_params.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_services\ble_dis\ble_dis.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_services\ble_hrs\ble_hrs.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_srv_common.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_services\ble_hrs\ble_hrs.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_services\ble_nus\ble_nus.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\nrf_ble_gatt\nrf_ble_gatt.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_advdata.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\clock\nrf_drv_clock.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_conn_params.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\common\nrf_drv_common.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_conn_state.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\gpiote\nrf_drv_gpiote.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_conn_state.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_srv_common.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\systick\nrf_drv_systick.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\nrf_ble_gatt\nrf_ble_gatt.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\twi_master\nrf_drv_twi.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\gatt_cache_manager.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\uart\nrf_drv_uart.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\gatt_cache_manager.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\gatts_cache_manager.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\fifo\app_fifo.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\gatts_cache_manager.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\id_manager.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\fstorage\fstorage.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\id_manager.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\peer_data_storage.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\gpiote\app_gpiote.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\peer_data_storage.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\peer_database.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\hardfault\hardfault_implementation.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\peer_database.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\peer_id.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\hardfault\nrf52\handler\hardfault_handler_gcc.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\peer_id.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\peer_manager.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\log\src\nrf_log_backend_serial.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\peer_manager.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\peer_manager_internal.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\peer_manager_types.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\pm_buffer.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\log\src\nrf_log_frontend.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\pm_buffer.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\pm_mutex.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\scheduler\app_scheduler.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\pm_mutex.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\security_dispatcher.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\strerror\nrf_strerror.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\security_dispatcher.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\security_manager.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\timer\app_timer.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\peer_manager\security_manager.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\clock\nrf_drv_clock.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\uart\app_uart_fifo.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\common\nrf_drv_common.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\uart\retarget.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\gpiote\nrf_drv_gpiote.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\app_error.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\systick\nrf_drv_systick.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\app_error_weak.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\twi_master\nrf_drv_twi.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\app_util_platform.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\uart\nrf_drv_uart.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\nrf_assert.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\fds\fds.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\softdevice\common\softdevice_handler\softdevice_handler.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\fds\fds.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\fds\fds_internal_defs.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\fifo\app_fifo.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\toolchain\gcc\gcc_startup_nrf52.S">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\fstorage\fstorage.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\toolchain\system_nrf52.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\gpiote\app_gpiote.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\RTT_Syscalls_GCC.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\hardfault\hardfault_implementation.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\SEGGER_RTT.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\hardfault\nrf52\handler\hardfault_handler_gcc.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\SEGGER_RTT_printf.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\log\src\nrf_log_backend_serial.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\open\MMA8453.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\log\src\nrf_log_frontend.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\open\MMA8453.h" />
-		<Unit filename="..\Source\open\MMA8453_port_NRF52.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\scheduler\app_scheduler.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\open\printf.c">
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\sensorsim\sensorsim.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\open\printf.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\sensorsim\sensorsim.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\strerror\nrf_strerror.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\timer\app_timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\uart\app_uart_fifo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\uart\retarget.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\app_error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\app_error_weak.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\app_util_platform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\nrf_assert.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\sdk_mapped_flags.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\sdk_mapped_flags.h" />
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\softdevice\common\softdevice_handler\softdevice_handler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\toolchain\gcc\gcc_startup_nrf52.S">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\toolchain\system_nrf52.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\RTT_Syscalls_GCC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\SEGGER_RTT.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\SEGGER_RTT_printf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\open\MMA8453.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\open\MMA8453.h" />
+		<Unit filename="..\..\Source\open\MMA8453_port_NRF52.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\open\printf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="..\..\Source\open\printf.h" />
 		<Extensions>
 			<code_completion />
 			<debugger>
 				<target_debugging_settings target="Debug" active_interface="J-link">
-					<debug_interface interface_id="J-link" ip_address="localhost" ip_port="2331" path="%Software\SEGGER\J-Link:InstallPath%" executable="JLinkGDBServer.exe" description="..\Source\nrf\sdk\nRF5_SDK_13.0.0\svd\nrf52.svd" dont_start_server="false" backoff_time="2000" options="2" reg_filter="0" active_family="Nordic" gdb_before_conn="" gdb_after_conn="">
+					<debug_interface interface_id="J-link" ip_address="localhost" ip_port="2331" path="%Software\SEGGER\J-Link:InstallPath%" executable="JLinkGDBServer.exe" description="..\..\Source\nrf\sdk\nRF5_SDK_13.0.0\svd\nrf52.svd" dont_start_server="false" backoff_time="2000" options="2" reg_filter="0" active_family="Nordic" gdb_before_conn="" gdb_after_conn="">
 						<family_options family_id="Nordic">
 							<option opt_id="ID_DEVICE" opt_value="nRF52832_xxAA" />
 							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
@@ -426,7 +502,7 @@
 					</debug_interface>
 				</target_debugging_settings>
 				<target_debugging_settings target="Release" active_interface="J-link">
-					<debug_interface interface_id="J-link" ip_address="localhost" ip_port="2331" path="%Software\SEGGER\J-Link:InstallPath%" executable="JLinkGDBServer.exe" description="..\Source\nrf\sdk\svd\nrf52.svd" dont_start_server="false" backoff_time="2000" options="2" reg_filter="0" active_family="Nordic" gdb_before_conn="" gdb_after_conn="">
+					<debug_interface interface_id="J-link" ip_address="localhost" ip_port="2331" path="%Software\SEGGER\J-Link:InstallPath%" executable="JLinkGDBServer.exe" description="..\..\Source\nrf\sdk\svd\nrf52.svd" dont_start_server="false" backoff_time="2000" options="2" reg_filter="0" active_family="Nordic" gdb_before_conn="" gdb_after_conn="">
 						<family_options family_id="Nordic">
 							<option opt_id="ID_DEVICE" opt_value="nRF51822_xxAA" />
 							<option opt_id="ID_JTAG_SWD" opt_value="swd" />

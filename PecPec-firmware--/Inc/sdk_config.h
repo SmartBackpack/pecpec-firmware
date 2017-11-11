@@ -6,6 +6,21 @@
 #ifdef USE_APP_CONFIG
 #include "app_config.h"
 #endif
+// <h> Application 
+
+//==========================================================
+// <o> NRF_BLE_CENTRAL_LINK_COUNT - Number of central links 
+#ifndef NRF_BLE_CENTRAL_LINK_COUNT
+#define NRF_BLE_CENTRAL_LINK_COUNT 0
+#endif
+
+// <o> NRF_BLE_PERIPHERAL_LINK_COUNT - Number of peripheral links 
+#ifndef NRF_BLE_PERIPHERAL_LINK_COUNT
+#define NRF_BLE_PERIPHERAL_LINK_COUNT 1
+#endif
+
+// </h> 
+//==========================================================
 // <h> nRF_BLE
 
 //==========================================================
@@ -55,7 +70,7 @@
 
 
 #ifndef PEER_MANAGER_ENABLED
-#define PEER_MANAGER_ENABLED 0
+#define PEER_MANAGER_ENABLED 1
 #endif
 
 // </h>
@@ -89,7 +104,7 @@
 
 
 #ifndef BLE_BAS_ENABLED
-#define BLE_BAS_ENABLED 0
+#define BLE_BAS_ENABLED 1
 #endif
 
 // <q> BLE_CSCS_ENABLED  - ble_cscs - Cycling Speed and Cadence Service
@@ -110,7 +125,7 @@
 
 
 #ifndef BLE_DIS_ENABLED
-#define BLE_DIS_ENABLED 0
+#define BLE_DIS_ENABLED 1
 #endif
 
 // <q> BLE_GLS_ENABLED  - ble_gls - Glucose Service
@@ -145,7 +160,7 @@
 
 
 #ifndef BLE_HRS_ENABLED
-#define BLE_HRS_ENABLED 0
+#define BLE_HRS_ENABLED 1
 #endif
 
 // <q> BLE_HTS_ENABLED  - ble_hts - Health Thermometer Service
@@ -297,7 +312,7 @@
 // <2=> Synth
 
 #ifndef CLOCK_CONFIG_LF_SRC
-#define CLOCK_CONFIG_LF_SRC 0
+#define CLOCK_CONFIG_LF_SRC 1
 #endif
 
 // <o> CLOCK_CONFIG_IRQ_PRIORITY  - Interrupt priority
@@ -605,7 +620,7 @@
 // <7=> 7
 
 #ifndef GPIOTE_CONFIG_IRQ_PRIORITY
-#define GPIOTE_CONFIG_IRQ_PRIORITY 7
+#define GPIOTE_CONFIG_IRQ_PRIORITY 2
 #endif
 
 // <e> GPIOTE_CONFIG_LOG_ENABLED - Enables logging in the module.
@@ -2737,7 +2752,7 @@
 // <e> UART_ENABLED - nrf_drv_uart - UART/UARTE peripheral driver
 //==========================================================
 #ifndef UART_ENABLED
-#define UART_ENABLED 0
+#define UART_ENABLED 1
 #endif
 #if  UART_ENABLED
 // <o> UART_DEFAULT_CONFIG_HWFC  - Hardware Flow Control
@@ -3225,7 +3240,7 @@
 
 
 #ifndef CRC16_ENABLED
-#define CRC16_ENABLED 0
+#define CRC16_ENABLED 1
 #endif
 
 // <q> CRC32_ENABLED  - crc32 - CRC32 calculation routines
@@ -3245,7 +3260,7 @@
 // <e> FDS_ENABLED - fds - Flash data storage module
 //==========================================================
 #ifndef FDS_ENABLED
-#define FDS_ENABLED 0
+#define FDS_ENABLED 1
 #endif
 #if  FDS_ENABLED
 // <o> FDS_OP_QUEUE_SIZE - Size of the internal queue.
@@ -3651,7 +3666,7 @@
 
 
 #ifndef NRF_QUEUE_ENABLED
-#define NRF_QUEUE_ENABLED 0
+#define NRF_QUEUE_ENABLED 1
 #endif
 
 // <q> NRF_STRERROR_ENABLED  - nrf_strerror - Library for converting error code to string.
@@ -3730,7 +3745,7 @@
 // <e> NRF_LOG_USES_COLORS - If enabled then ANSI escape code for colors is prefixed to every string
 //==========================================================
 #ifndef NRF_LOG_USES_COLORS
-#define NRF_LOG_USES_COLORS 1
+#define NRF_LOG_USES_COLORS 0
 #endif
 #if  NRF_LOG_USES_COLORS
 // <o> NRF_LOG_COLOR_DEFAULT  - ANSI escape code prefix.
