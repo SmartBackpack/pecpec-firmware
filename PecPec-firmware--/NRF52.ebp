@@ -4,6 +4,7 @@
 	<FileVersion major="1" minor="0" />
 	<Project>
 		<Option title="NRF52" />
+		<Option makefile_is_custom="1" />
 		<Option pch_mode="2" />
 		<Option compiler="armgcc_eb" />
 		<MakeCommands>
@@ -12,7 +13,7 @@
 			<Clean command="$make -f $makefile clean$target" />
 			<DistClean command="$make -f $makefile distclean$target" />
 			<AskRebuildNeeded command="$make -q -f $makefile $target" />
-			<SilentBuild command="$make -s -f $makefile default" />
+			<SilentBuild command="$make -f $makefile default" />
 		</MakeCommands>
 		<Build>
 			<Target title="Debug">
@@ -70,18 +71,16 @@
 					<Add option="$lscript=./gcc_nrf51_blank_xxaa.ld" />
 				</Device>
 				<Compiler>
-					<Add option="-fdata-sections" />
-					<Add option="-ffunction-sections" />
-					<Add option="-Ofast" />
-					<Add option="-g2" />
 					<Add option="-fno-strict-aliasing" />
 				</Compiler>
-				<Assembler>
-					<Add option="-Wa,--no-warn" />
-				</Assembler>
-				<Linker>
-					<Add option="-Wl,--gc-sections" />
-				</Linker>
+				<MakeCommands>
+					<Build command="$make -f $makefile $target" />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean$target" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -s -f $makefile $target" />
+				</MakeCommands>
 			</Target>
 		</Build>
 		<Device>
@@ -271,14 +270,28 @@
 			<Add option="-mfpu=fpv4-sp-d16" />
 			<Add option="--specs=nano.specs -lc -lnosys" />
 		</Linker>
-		<Unit filename="gcc_nrf52.ld" />
+		<Unit filename="ble_app_hrs_gcc_nrf52.ld" />
+		<Unit filename="cscope.out" />
+		<Unit filename="gcc_nrf52_old_SDK13_bootloader.ld" />
 		<Unit filename="Inc\app_config.h" />
 		<Unit filename="Inc\pecpec_ble.h" />
 		<Unit filename="Inc\pecpec_nrf52.h" />
 		<Unit filename="Inc\sdk_config.h" />
+		<Unit filename="Inc\sdk_config_original_working.h" />
+		<Unit filename="Inc\sdk_config_test.h" />
+		<Unit filename="Inc\sdk_config_xz.h" />
 		<Unit filename="Inc\startup_config.h" />
+		<Unit filename="Makefile" />
+		<Unit filename="Makefile.bak" />
+		<Unit filename="NRF52.cscope_file_list" />
+		<Unit filename="NRF52.depend" />
+		<Unit filename="NRF52.elay" />
+		<Unit filename="nrf5x_common_old_SDK13.ld" />
 		<Unit filename="readme.txt" />
 		<Unit filename="Src\main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Src\main_old.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Src\pecpec_ble.c">
@@ -287,124 +300,11 @@
 		<Unit filename="Src\pecpec_nrf52.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_advertising\ble_advertising.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\ble_services\ble_nus\ble_nus.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_advdata.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_conn_params.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\common\ble_srv_common.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\ble\nrf_ble_gatt\nrf_ble_gatt.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\clock\nrf_drv_clock.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\common\nrf_drv_common.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\gpiote\nrf_drv_gpiote.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\systick\nrf_drv_systick.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\twi_master\nrf_drv_twi.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\drivers_nrf\uart\nrf_drv_uart.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\fifo\app_fifo.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\fstorage\fstorage.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\gpiote\app_gpiote.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\hardfault\hardfault_implementation.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\hardfault\nrf52\handler\hardfault_handler_gcc.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\log\src\nrf_log_backend_serial.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\log\src\nrf_log_frontend.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\scheduler\app_scheduler.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\strerror\nrf_strerror.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\timer\app_timer.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\uart\app_uart_fifo.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\uart\retarget.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\app_error.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\app_error_weak.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\app_util_platform.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\libraries\util\nrf_assert.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\softdevice\common\softdevice_handler\softdevice_handler.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\toolchain\gcc\gcc_startup_nrf52.S">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\components\toolchain\system_nrf52.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\RTT_Syscalls_GCC.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\SEGGER_RTT.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\nrf\sdk\nRF5_SDK_13.0.0\external\segger_rtt\SEGGER_RTT_printf.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\open\MMA8453.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\open\MMA8453.h" />
-		<Unit filename="..\Source\open\MMA8453_port_NRF52.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\open\printf.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\Source\open\printf.h" />
 		<Extensions>
 			<code_completion />
 			<debugger>
 				<target_debugging_settings target="Debug" active_interface="J-link">
-					<debug_interface interface_id="J-link" ip_address="localhost" ip_port="2331" path="%Software\SEGGER\J-Link:InstallPath%" executable="JLinkGDBServer.exe" description="..\Source\nrf\sdk\nRF5_SDK_13.0.0\svd\nrf52.svd" dont_start_server="false" backoff_time="2000" options="2" reg_filter="0" active_family="Nordic" gdb_before_conn="" gdb_after_conn="">
+					<debug_interface interface_id="J-link" ip_address="localhost" ip_port="2331" path="%Software\SEGGER\J-Link:InstallPath%" executable="JLinkGDBServer.exe" description="..\Source\nrf\sdk\nRF5_SDK_14.1.0\svd\nrf52.svd" dont_start_server="false" backoff_time="2000" options="2" reg_filter="0" active_family="Nordic" gdb_before_conn="" gdb_after_conn="">
 						<family_options family_id="Nordic">
 							<option opt_id="ID_DEVICE" opt_value="nRF52832_xxAA" />
 							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
